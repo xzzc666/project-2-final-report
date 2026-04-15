@@ -25,6 +25,53 @@ Your abstract.
 
 \section{Lecture review}
 
+\subsection{Relative Pose Estimation of the Robot}
+
+\subsubsection{Coordinate Systems and the Chain Rule}
+
+To estimate the relative position of the robot, multiple reference frames are introduced. In this work, the fixed world reference frame is denoted as the global coordinate system \( \{W\} \), while the coordinate system attached to the robot body is denoted as the local coordinate system \( \{B\} \). The global coordinate system provides a unified reference for describing the robot pose in the environment, whereas the local coordinate system is more suitable for representing short-term motion increments.
+
+The pose of the robot in the global coordinate system can be written as the homogeneous transformation matrix
+\[
+{}^{W}T_{B}=
+\begin{bmatrix}
+{}^{W}R_{B} & {}^{W}p_{B} \\
+0 & 1
+\end{bmatrix}
+\]
+where \({}^{W}R_{B}\) is the rotation matrix of the robot body frame relative to the global frame, and \({}^{W}p_{B}\) is the position vector of the robot origin in the global frame. If a point \(P\) is represented in the local coordinate system as \({}^{B}p\), then its coordinates in the global coordinate system can be expressed as
+\[
+{}^{W}p = {}^{W}R_{B}\,{}^{B}p + {}^{W}p_{B}.
+\]
+This equation shows that a point is first rotated and then translated when transformed from the local frame to the global frame.
+
+To update the pose across consecutive time steps, the chain rule of coordinate transformation is adopted. Let the robot body frames at time \(k-1\) and \(k\) be denoted by \( \{B_{k-1}\} \) and \( \{B_k\} \), respectively. Their relationship can be written as
+\[
+{}^{W}T_{B_k} = {}^{W}T_{B_{k-1}}\,{}^{B_{k-1}}T_{B_k}.
+\]
+Here, \({}^{B_{k-1}}T_{B_k}\) represents the local pose increment between two adjacent time steps. Based on this chained relationship, the robot pose can be recursively updated in the global frame, or equivalently represented relative to any chosen reference frame.
+
+\subsubsection{Coordinate Transformation Update Based on Velocity and Attitude}
+
+When the local displacement increment and the previous attitude of the robot are known, the current coordinate transformation can be updated recursively. Let \(\Delta p_{k-1}\) denote the displacement increment in the local frame at time \(k-1\). The robot position in the global coordinate system at time \(k\) can then be computed as
+\[
+p_k = p_{k-1} + R_{k-1}\Delta p_{k-1},
+\]
+where \(p_{k-1}\) is the global position vector at the previous time step, and \(R_{k-1}\) is the rotation matrix of the robot body frame relative to the global frame. This equation indicates that the local motion increment must first be rotated into the global frame before being added to the previous position.
+
+The local displacement increment can be approximated from the robot velocity and the sampling interval. If the forward linear velocity is \(v\) and the sampling interval is \(\Delta t\), then
+\[
+\Delta p_{k-1}=
+\begin{bmatrix}
+v\Delta t \\
+0 \\
+0
+\end{bmatrix}.
+\]
+This formulation assumes that the robot motion within one time step mainly occurs along the forward axis of the body frame. In practice, the robot heading may change continuously during motion. Therefore, a smaller \(\Delta t\) usually leads to better consistency between the assumed motion direction and the actual attitude, which improves the accuracy of the estimated position.
+
+Using this recursive formulation together with the chain rule, the robot pose can be expressed not only in the global frame but also relative to any selected reference frame. However, since this method depends on the commanded velocity, the sampling interval, and the attitude measurement result, the estimation error accumulates over time. Therefore, external position feedback or other correction information should be introduced periodically to suppress long-term drift.
+
 
 \bibliographystyle{alpha}
 \bibliography{sample}
