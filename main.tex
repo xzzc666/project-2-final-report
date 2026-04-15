@@ -10,7 +10,9 @@
 
 % Useful packages
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \title{Your Paper}
@@ -71,6 +73,110 @@ v\Delta t \\
 This formulation assumes that the robot motion within one time step mainly occurs along the forward axis of the body frame. In practice, the robot heading may change continuously during motion. Therefore, a smaller \(\Delta t\) usually leads to better consistency between the assumed motion direction and the actual attitude, which improves the accuracy of the estimated position.
 
 Using this recursive formulation together with the chain rule, the robot pose can be expressed not only in the global frame but also relative to any selected reference frame. However, since this method depends on the commanded velocity, the sampling interval, and the attitude measurement result, the estimation error accumulates over time. Therefore, external position feedback or other correction information should be introduced periodically to suppress long-term drift.
+
+\subsection{Theoretical Background of 2D Map Generation}
+
+\subsubsection{Two-Dimensional Grid Map and Its Role}
+
+To use a 3D point cloud for subsequent route search and path planning, the environment is first discretized into a two-dimensional grid map. The space is divided into regular cells with a fixed resolution, and each cell represents a local region of the environment. In this way, the originally continuous and large-scale point cloud is compressed into a regular discrete representation.
+
+The main role of the 2D grid map is to provide a discretized search space for path-planning algorithms. Direct search on the raw point cloud is computationally expensive because the data scale is large and the adjacency relationship among points is complicated. After grid discretization, path search only needs to be performed among a finite number of cells, which makes the neighborhood relationship clearer and reduces the computational burden.
+
+In addition, the 2D grid map helps control the growth of complexity as the map becomes larger. Local geometric information in each region can be summarized by a traversal cost \(cost\), where a larger value indicates more difficult traversal and a smaller value indicates better traversability. In this way, the environment is represented as a collection of cost-associated cells, which provides a compact and efficient input for subsequent path planning.
+
+\subsubsection{Ground Layer Selection}
+
+During the construction of a two-dimensional grid map, a single grid cell may contain more than one layer of points. In addition to the actual ground, points may also come from the bottom of obstacles, suspended structures, or noise. Therefore, the lowest point in a cell cannot be directly regarded as the ground. To address this issue, candidate layers are first constructed along the vertical direction in each grid cell, and then the layer that most likely represents the actual ground is selected.
+
+Let the candidate layer set of the \(i\)-th grid cell be
+\[
+\mathcal{L}_i = \{L_{i,1}, L_{i,2}, \dots, L_{i,m_i}\}
+\]
+where \(m_i\) is the number of candidate layers in the cell. For each candidate layer \(L_{i,k}\), its representative height is defined as
+\[
+h_{i,k} = \frac{1}{N_{i,k}} \sum_{p \in L_{i,k}} y(p)
+\]
+where \(N_{i,k}\) is the number of points in \(L_{i,k}\), and \(y(p)\) is the height coordinate of point \(p\).
+
+Since the actual ground is usually locally continuous, ground-layer selection should depend not only on the height distribution inside the current cell but also on the ground height of neighboring cells. Let \(\hat{h}_{\mathcal{N}(i)}\) denote the reference ground height in the neighborhood of the \(i\)-th cell. Then the ground layer of the current cell can be defined as
+\[
+L_i^\ast = \arg\min_{L_{i,k} \in \mathcal{L}_i}
+\left| h_{i,k} - \hat{h}_{\mathcal{N}(i)} \right|
+\]
+which means that the candidate layer whose height is closest to the neighborhood reference ground height is selected as the ground layer. To avoid incorrectly classifying a layer with a large height difference as ground, an additional continuity constraint can be introduced:
+\[
+\left| h(L_i^\ast) - \hat{h}_{\mathcal{N}(i)} \right| < \tau_h
+\]
+where \(\tau_h\) is the ground-continuity threshold. This candidate-layer selection strategy based on neighborhood continuity can extract the actual ground more robustly and reduce the interference caused by suspended structures, obstacle boundaries, and local noise.
+
+\subsubsection{Eigenvalues and Eigenvectors}
+
+After ground-layer selection, the local geometric characteristics of each grid cell still need to be analyzed in order to evaluate traversability. In this work, eigen-analysis is not performed on the entire map as a whole. Instead, it is carried out separately for each grid cell by constructing a covariance matrix from its local point set. As a result, the obtained eigenvalues and eigenvectors describe the local surface properties of each individual cell rather than the global properties of the entire map.
+
+For the \(i\)-th grid cell, let its local point set be
+\[
+\mathcal{P}_i = \{p_1, p_2, \dots, p_{N_i}\}, \quad p_k \in \mathbb{R}^3
+\]
+and let its centroid be
+\[
+\bar{p}_i = \frac{1}{N_i}\sum_{k=1}^{N_i} p_k
+\]
+Then the covariance matrix of this cell is defined as
+\[
+C_i = \frac{1}{N_i}\sum_{k=1}^{N_i}(p_k-\bar{p}_i)(p_k-\bar{p}_i)^T
+\]
+The eigen-decomposition of \(C_i\) is written as
+\[
+C_i n_{i,j}=\lambda_{i,j} n_{i,j}, \quad j=1,2,3
+\]
+with
+\[
+\lambda_{i,1}\le \lambda_{i,2}\le \lambda_{i,3}
+\]
+
+If the local point set in the cell is approximately distributed on a plane, then the eigenvector corresponding to the smallest eigenvalue, \(n_{i,1}\), can be regarded as the approximate normal vector of the local ground surface. Let the unit vertical direction be
+\[
+v=
+\begin{bmatrix}
+0\\
+0\\
+1
+\end{bmatrix}
+\]
+This eigenvector can also be treated as the surface orientation vector for slope evaluation. Then the local slope of the cell can be expressed as
+\[
+\theta_i=\arccos\left(\frac{n_{i,1}\cdot v}{\|n_{i,1}\|\,\|v\|}\right)
+\]
+where a larger \(\theta_i\) indicates a larger local surface inclination.
+
+At the same time, the smallest eigenvalue \(\lambda_{i,1}\) reflects the dispersion of points along the normal direction and can therefore be used to characterize the local roughness or unevenness of the cell. A normalized roughness index can be defined as
+\[
+r_i=\frac{\lambda_{i,1}}{\lambda_{i,1}+\lambda_{i,2}+\lambda_{i,3}}
+\]
+where a larger \(r_i\) indicates a rougher or less stable local surface.
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/smallev.png}
+    \caption{Cell with smaller minimum eigenvalue.}
+    \label{fig:smallev}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{figures/bigev.png}
+    \caption{Cell with larger minimum eigenvalue.}
+    \label{fig:bigev}
+\end{subfigure}
+\caption{cells with different minimum eigenvectors and eigenvalues.}
+\label{fig:eigenvalue-comparison}
+\end{figure}
+
+Therefore, the eigenvector associated with the smallest eigenvalue mainly describes the local directional property of each grid cell, while the smallest eigenvalue itself reflects the stability of the cell along the surface normal direction. By analyzing slope and roughness on a cell-by-cell basis, the local traversability of different regions can be quantified and used for subsequent cost-map construction. As illustrated in Fig.~\ref{fig:eigenvalue-comparison}, two cells may exhibit similar slope angles while still having different roughness levels. The annotated \(z\)-vector in each figure corresponds to the eigenvector associated with the smallest eigenvalue, and the angle between this vector and the world \(z\)-axis represents the local slope, which is approximately \(17^\circ\) in both cases. Compared with Fig.~\ref{fig:smallev}, the cell in Fig.~\ref{fig:bigev} contains a local pit and is therefore geometrically more irregular, leading to a larger minimum eigenvalue.
+
+
 
 
 \bibliographystyle{alpha}
