@@ -170,11 +170,39 @@ where a larger \(r_i\) indicates a rougher or less stable local surface.
     \caption{Cell with larger minimum eigenvalue.}
     \label{fig:bigev}
 \end{subfigure}
-\caption{cells with different minimum eigenvectors and eigenvalues.}
+\caption{cells with different minimum eigenvalues.}
 \label{fig:eigenvalue-comparison}
 \end{figure}
 
 Therefore, the eigenvector associated with the smallest eigenvalue mainly describes the local directional property of each grid cell, while the smallest eigenvalue itself reflects the stability of the cell along the surface normal direction. By analyzing slope and roughness on a cell-by-cell basis, the local traversability of different regions can be quantified and used for subsequent cost-map construction. As illustrated in Fig.~\ref{fig:eigenvalue-comparison}, two cells may exhibit similar slope angles while still having different roughness levels. The annotated \(z\)-vector in each figure corresponds to the eigenvector associated with the smallest eigenvalue, and the angle between this vector and the world \(z\)-axis represents the local slope, which is approximately \(17^\circ\) in both cases. Compared with Fig.~\ref{fig:smallev}, the cell in Fig.~\ref{fig:bigev} contains a local pit and is therefore geometrically more irregular, leading to a larger minimum eigenvalue.
+
+
+\section{Methods}
+
+\subsection{Swarm Scanning and Centralized Processing Architecture}
+
+This work adopts a swarm-based scanning strategy, in which multiple robots scan the environment in parallel. Compared with a single-robot solution that scans the scene region by region, this approach can collect environmental information over a larger area within a shorter time. Meanwhile, the number of deployed robots can be adjusted according to the environment size and practical constraints such as time and cost, which makes the overall scheme more flexible.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.82\textwidth]{figures/centralized_slam_architecture.drawio.png}
+    \caption{Centralized processing architecture for swarm monocular SLAM robots.}
+    \label{fig:centralized-architecture}
+\end{figure}
+
+Since AI-based models are used in the subsequent processing stages, the system requires relatively high computing power. However, if every individual SLAM robot were equipped with a high-performance NPU or other dedicated AI hardware, the total hardware cost in a multi-robot scenario would increase significantly, as shown in Fig.~\ref{fig:centralized-architecture}. To reduce this cost, a centralized data-processing architecture is adopted. Under this architecture, all SLAM robots are treated as executors and sensors. Their onboard functions are limited to motion, image acquisition, and pose-related data collection, while computationally intensive AI inference is not performed locally. Instead, all collected data are transmitted through the network to a high-performance host computer, which is responsible for unified data processing, map construction, and path planning. In this way, the high computational load is concentrated on a single terminal, effectively reducing the hardware cost of each robot.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.88\textwidth]{figures/overview flow chat.png}
+    \caption{Overview flow chart of single-robot control and data acquisition.}
+    \label{fig:overview-flow}
+\end{figure}
+
+
+The overall operation flow is shown in Fig.~\ref{fig:overview-flow}. After the host computer receives the images and coarse pose estimates uploaded by the robots, it first applies Depth Pro to convert the images into depth maps, and then reconstructs the point cloud corresponding to each image. Based on the coarse pose estimates, the host computer performs post-processing on each point cloud and merges it into the global point cloud. At the same time, the current robot pose can be further refined using the feedback from the merging error, so that a more accurate pose estimate is obtained. On this basis, the global point cloud is further converted into a 2D map, which is used to determine traversable regions, blocked regions, unexplored regions, and the traversal cost of different areas. The path-planning module then generates paths and motion commands for each robot according to the refined poses and the current 2D map. When all robots have completed the scanning task, that is, when no further valid path can be planned, the scanning process ends. Finally, the merged global point cloud is exported as the output of the complete scanning task.
+
+
 
 
 

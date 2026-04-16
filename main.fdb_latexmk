@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1776293438.10488 "main.aux" "main.bbl" "main" 1776293440.19609 0
+["bibtex main"] 1776343352.19189 "main.aux" "main.bbl" "main" 1776343354.41472 0
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/bibtex/bib/aguplus/sample.bib" 777769200 1431 3d6a889f0e0d40988daf1dc04efafeac ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1776293439 2216 750668853b272a4e3793e03828c897eb "pdflatex"
+  "main.aux" 1776343353 3078 186a433ac5854101aa15490e64e785fd "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776293438.44238 "d:/MyCode/latex/project2/main.tex" "main.pdf" "main" 1776293440.1966 0
+["pdflatex"] 1776343352.49587 "d:/MyCode/latex/project2/main.tex" "main.pdf" "main" 1776343354.41542 0
   "C:/Users/dongz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1776289544 202101 cad7bc6f2770a48f6562a2823a2b2dab ""
   "C:/Users/dongz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1761703651 13321868 1b135950246dc5905a8ebdd7c3de39c2 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -110,13 +110,15 @@
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "d:/MyCode/latex/project2/main.tex" 1776293435 11612 abb0134a818a8bc82cb3bcb82c48b0e2 ""
+  "d:/MyCode/latex/project2/main.tex" 1776343349 15045 673c4250e4e8cb25d8e81ece4b48167c ""
   "figures/bigev.png" 1776292059 19142 3c9fe4ea1ecfb0aaed95533ffee6b249 ""
+  "figures/centralized_slam_architecture.drawio.png" 1776340945 67347 cab11cd662ce4cf05516ebfed6c8bf8e ""
+  "figures/overview flow chat.png" 1776339620 579197 8e3bbb5d00ee14a0d44a614e218b3e31 ""
   "figures/smallev.png" 1776291937 22986 8e1f28986d2a5c3785b5cfc0e5a5b3f4 ""
-  "main.aux" 1776293439 2216 750668853b272a4e3793e03828c897eb "pdflatex"
-  "main.bbl" 1776293438 52 0eba253fc001332e731e8aba3f23127b "bibtex main"
-  "main.out" 1776293439 1993 9ecc90ed26afdc28109522086b3baa30 "pdflatex"
-  "main.tex" 1776293435 11612 abb0134a818a8bc82cb3bcb82c48b0e2 ""
+  "main.aux" 1776343353 3078 186a433ac5854101aa15490e64e785fd "pdflatex"
+  "main.bbl" 1776343352 52 0eba253fc001332e731e8aba3f23127b "bibtex main"
+  "main.out" 1776343353 2414 c469a2c6193b9348875ac08983fe3f5d "pdflatex"
+  "main.tex" 1776343349 15045 673c4250e4e8cb25d8e81ece4b48167c ""
   (generated)
   "main.aux"
   "main.log"
