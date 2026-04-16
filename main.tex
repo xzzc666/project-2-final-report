@@ -202,6 +202,26 @@ Since AI-based models are used in the subsequent processing stages, the system r
 
 The overall operation flow is shown in Fig.~\ref{fig:overview-flow}. After the host computer receives the images and coarse pose estimates uploaded by the robots, it first applies Depth Pro to convert the images into depth maps, and then reconstructs the point cloud corresponding to each image. Based on the coarse pose estimates, the host computer performs post-processing on each point cloud and merges it into the global point cloud. At the same time, the current robot pose can be further refined using the feedback from the merging error, so that a more accurate pose estimate is obtained. On this basis, the global point cloud is further converted into a 2D map, which is used to determine traversable regions, blocked regions, unexplored regions, and the traversal cost of different areas. The path-planning module then generates paths and motion commands for each robot according to the refined poses and the current 2D map. When all robots have completed the scanning task, that is, when no further valid path can be planned, the scanning process ends. Finally, the merged global point cloud is exported as the output of the complete scanning task.
 
+\subsection{RTOS-Based Robot Control Architecture}
+
+To improve the real-time performance and structural clarity of the onboard control software, the robot-side system was implemented using an RTOS-based architecture. The whole system contains four core tasks: the WiFi feedback task, the robot control task, the photo-reading task, and the position-estimation task. These tasks cooperate with different responsibilities so that communication, motion execution, image update, and pose estimation can proceed in parallel.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.92\textwidth]{figures/robot_code_architecture.drawio.png}
+    \caption{RTOS-based robot control architecture centered on the shared \texttt{robot state} object.}
+    \label{fig:robot-code-architecture}
+\end{figure}
+The software maintains a unified global state object, denoted as \texttt{robot state}, which stores the key runtime status of the robot, including the movement mode, motor PWM, actual moving speed, latest captured image, current camera parameters, current IMU output, error logs, reference coordinate frame, and current relative pose. This state object also serves as the interface between the communication layer and the execution layer. As illustrated in Fig.~\ref{fig:robot-code-architecture}, the left side of the architecture can be regarded as the communication layer, while the right side can be regarded as the sensing and execution layer. The communication layer does not directly read or write hardware. Instead, it only reads and modifies the shared \texttt{robot state} object according to the received packets. Conversely, the execution layer does not directly communicate with the communication layer. It continuously updates \texttt{robot state} from hardware observations and maps the relevant state attributes to hardware actions. In this way, the two parts are decoupled through the shared state object rather than directly invoking each other, which helps avoid blocking and makes the program structure clearer.
+
+Among the four tasks, the WiFi feedback task has the highest priority. It is responsible only for communication, as well as reading and modifying the shared state object, but it does not directly perform time-consuming operations such as IMU reading, image acquisition, or pose computation. This task remains suspended during idle periods and is awakened only when a communication packet is received. The robot control task has the second-highest priority and is also suspended most of the time. It is awakened after the WiFi feedback task updates motion-related parameters, and then updates the robot motion according to the movement mode and PWM stored in the shared state.
+
+The photo-reading task and the position-estimation task have the same lower priority and run periodically in the background. The photo-reading task polls the camera at a fixed interval and continuously refreshes the latest image buffer. The position-estimation task reads the IMU periodically and updates the relative pose. By running these two tasks continuously in the background, the system avoids blocking caused by temporary hardware access when a command arrives.
+
+To guarantee consistency in multi-task access to shared data, all shared states are protected by a mutex. In addition, any shared result must be written back to the state object only after the complete computation is finished, rather than through staged partial updates. This ensures that the WiFi feedback task always reads complete and internally consistent data when responding to external requests.
+
+
+
 
 
 
