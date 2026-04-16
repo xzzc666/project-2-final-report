@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.29)  16 APR 2026 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.29)  16 APR 2026 22:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,12 +399,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/dongz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 [2]
-<figures/smallev.png, id=72, 580.41844pt x 235.63031pt>
+<figures/smallev.png, id=76, 580.41844pt x 235.63031pt>
 File: figures/smallev.png Graphic file (type png)
 <use figures/smallev.png>
 Package pdftex.def Info: figures/smallev.png  used on input line 162.
 (pdftex.def)             Requested size: 208.48242pt x 84.63628pt.
-<figures/bigev.png, id=74, 473.51906pt x 223.58531pt>
+<figures/bigev.png, id=78, 473.51906pt x 223.58531pt>
 File: figures/bigev.png Graphic file (type png)
 <use figures/bigev.png>
 Package pdftex.def Info: figures/bigev.png  used on input line 169.
@@ -412,7 +412,7 @@ Package pdftex.def Info: figures/bigev.png  used on input line 169.
 
 
 [3]
-<figures/centralized_slam_architecture.drawio.png, id=83, 1165.35374pt x 563.10374pt>
+<figures/centralized_slam_architecture.drawio.png, id=87, 1165.35374pt x 563.10374pt>
 File: figures/centralized_slam_architecture.drawio.png Graphic file (type png)
 <use figures/centralized_slam_architecture.drawio.png>
 Package pdftex.def Info: figures/centralized_slam_architecture.drawio.png  used on input line 188.
@@ -420,44 +420,69 @@ Package pdftex.def Info: figures/centralized_slam_architecture.drawio.png  used 
 
 
 [4 <./figures/smallev.png> <./figures/bigev.png> <./figures/centralized_slam_architecture.drawio.png>]
-<figures/overview flow chat.png, id=94, 1841.37938pt x 703.87968pt>
+<figures/overview flow chat.png, id=98, 1841.37938pt x 703.87968pt>
 File: figures/overview flow chat.png Graphic file (type png)
 <use figures/overview flow chat.png>
 Package pdftex.def Info: figures/overview flow chat.png  used on input line 197.
 (pdftex.def)             Requested size: 390.35121pt x 149.21533pt.
-<figures/robot_code_architecture.drawio.png, id=96, 1446.40375pt x 763.85374pt>
+<figures/robot_code_architecture.drawio.png, id=100, 1446.40375pt x 763.85374pt>
 File: figures/robot_code_architecture.drawio.png Graphic file (type png)
 <use figures/robot_code_architecture.drawio.png>
 Package pdftex.def Info: figures/robot_code_architecture.drawio.png  used on input line 211.
 (pdftex.def)             Requested size: 408.09138pt x 215.50935pt.
 
 
-[5 <./figures/overview flow chat.png>] (main.bbl
+[5 <./figures/overview flow chat.png>]
+
+[6 <./figures/robot_code_architecture.drawio.png>]
+<figures/2Dmap/WALL.png, id=116, 554.07pt x 377.15906pt>
+File: figures/2Dmap/WALL.png Graphic file (type png)
+<use figures/2Dmap/WALL.png>
+Package pdftex.def Info: figures/2Dmap/WALL.png  used on input line 263.
+(pdftex.def)             Requested size: 283.88995pt x 193.24635pt.
+<figures/2Dmap/Suspended BLOCK.png, id=117, 322.20375pt x 449.42906pt>
+File: figures/2Dmap/Suspended BLOCK.png Graphic file (type png)
+<use figures/2Dmap/Suspended BLOCK.png>
+Package pdftex.def Info: figures/2Dmap/Suspended BLOCK.png  used on input line 270.
+(pdftex.def)             Requested size: 139.7283pt x 194.9103pt.
+<figures/2Dmap/SLOPE.png, id=118, 324.46219pt x 194.97844pt>
+File: figures/2Dmap/SLOPE.png Graphic file (type png)
+<use figures/2Dmap/SLOPE.png>
+Package pdftex.def Info: figures/2Dmap/SLOPE.png  used on input line 279.
+(pdftex.def)             Requested size: 208.48242pt x 125.28558pt.
+<figures/2Dmap/PIT.png, id=119, 517.935pt x 305.64188pt>
+File: figures/2Dmap/PIT.png Graphic file (type png)
+<use figures/2Dmap/PIT.png>
+Package pdftex.def Info: figures/2Dmap/PIT.png  used on input line 286.
+(pdftex.def)             Requested size: 208.48242pt x 123.02875pt.
+ (main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 
-[6 <./figures/robot_code_architecture.drawio.png>] (main.aux)
+[7]
+
+[8 <./figures/2Dmap/WALL.png> <./figures/2Dmap/Suspended BLOCK.png> <./figures/2Dmap/SLOPE.png> <./figures/2Dmap/PIT.png>] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DBD513BDE88E1B7984CCF11DCD276548;2666.
+(rerunfilecheck)             Checksum: BDAF14A52875A004A89D6DE5441FB90C;2914.
  ) 
 Here is how much of TeX's memory you used:
- 12759 strings out of 468080
- 205355 string characters out of 5425771
- 630446 words of memory out of 5000000
- 41257 multiletter control sequences out of 15000+600000
+ 12804 strings out of 468080
+ 206503 string characters out of 5425771
+ 630992 words of memory out of 5000000
+ 41295 multiletter control sequences out of 15000+600000
  636359 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1296b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1296b,549s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 844381 bytes).
+Output written on main.pdf (8 pages, 912504 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
