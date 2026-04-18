@@ -1,3 +1,10 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{{LCS}26}
+
+\bibitem[{LCS}26]{lcsc_marketplace}
+{LCSC Electronics}.
+\newblock Lcsc electronics marketplace.
+\newblock \url{https://www.lcsc.com/}, 2026.
+\newblock Component price source used for the BOM in this work. Accessed:
+  2026-04-19.
 
 \end{thebibliography}

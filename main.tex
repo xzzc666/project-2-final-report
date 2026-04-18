@@ -1,19 +1,24 @@
-\documentclass{article}
+\documentclass[journal]{IEEEtran}
 
-% Language setting
-% Replace `english' with e.g. `spanish' to change the document language
-\usepackage[english]{babel}
-
-% Set page size and margins
-% Replace `letterpaper' with `a4paper' for UK/EU standard size
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-
-% Useful packages
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multirow}
 \usepackage{subcaption}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{float}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=single,
+  breaklines=true,
+  captionpos=b
+}
 
 \title{Your Paper}
 \author{You}
@@ -26,7 +31,7 @@ Your abstract.
 \end{abstract}
 
 \section{Lecture review}
-
+\section{Theoretical Background}
 \subsection{Relative Pose Estimation of the Robot}
 
 \subsubsection{Coordinate Systems and the Chain Rule}
@@ -157,16 +162,16 @@ where a larger \(r_i\) indicates a rougher or less stable local surface.
 
 \begin{figure}[htbp]
 \centering
-\begin{subfigure}[b]{0.47\textwidth}
+\begin{subfigure}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\textwidth]{figures/smallev.png}
+    \includegraphics[width=\columnwidth]{figures/smallev.png}
     \caption{Cell with smaller minimum eigenvalue.}
     \label{fig:smallev}
 \end{subfigure}
 \hfill
-\begin{subfigure}[b]{0.47\textwidth}
+\begin{subfigure}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\textwidth]{figures/bigev.png}
+    \includegraphics[width=\columnwidth]{figures/bigev.png}
     \caption{Cell with larger minimum eigenvalue.}
     \label{fig:bigev}
 \end{subfigure}
@@ -185,7 +190,7 @@ This work adopts a swarm-based scanning strategy, in which multiple robots scan 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.82\textwidth]{figures/centralized_slam_architecture.drawio.png}
+    \includegraphics[width=0.82\columnwidth]{figures/centralized_slam_architecture.drawio.png}
     \caption{Centralized processing architecture for swarm monocular SLAM robots.}
     \label{fig:centralized-architecture}
 \end{figure}
@@ -194,7 +199,7 @@ Since AI-based models are used in the subsequent processing stages, the system r
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.88\textwidth]{figures/overview flow chat.png}
+    \includegraphics[width=0.88\columnwidth]{figures/overview flow chat.png}
     \caption{Overview flow chart of single-robot control and data acquisition.}
     \label{fig:overview-flow}
 \end{figure}
@@ -202,13 +207,44 @@ Since AI-based models are used in the subsequent processing stages, the system r
 
 The overall operation flow is shown in Fig.~\ref{fig:overview-flow}. After the host computer receives the images and coarse pose estimates uploaded by the robots, it first applies Depth Pro to convert the images into depth maps, and then reconstructs the point cloud corresponding to each image. Based on the coarse pose estimates, the host computer performs post-processing on each point cloud and merges it into the global point cloud. At the same time, the current robot pose can be further refined using the feedback from the merging error, so that a more accurate pose estimate is obtained. On this basis, the global point cloud is further converted into a 2D map, which is used to determine traversable regions, blocked regions, unexplored regions, and the traversal cost of different areas. The path-planning module then generates paths and motion commands for each robot according to the refined poses and the current 2D map. When all robots have completed the scanning task, that is, when no further valid path can be planned, the scanning process ends. Finally, the merged global point cloud is exported as the output of the complete scanning task.
 
+\subsection{Robot Platform}
+
+The final robot platform adopted in this work is the second-generation robot. It was designed as a compact and highly integrated platform with a size of approximately \(10 \times 10 \times 10\text{ cm}\), and includes image acquisition, wireless communication, motion execution, and coarse pose estimation capabilities. The platform uses an \texttt{ESP32-CAM} controller, an \texttt{OV3660} camera, an \texttt{MPU6050} IMU, and a motor-driving structure based on \texttt{L298N} and \texttt{N15} geared DC motors. This design provides the minimum hardware functions required by the system while keeping the robot small and low-cost. Based on the priced BOM entries listed in Appendix~\ref{app:hardware-iteration}, the hardware cost of a single robot is approximately GBP 10. Further details are provided in Appendix~\ref{app:hardware-iteration}.
+
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/front.jpg}
+        \caption{Front view.}
+        \label{fig:car-v2-front-main}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/side.jpg}
+        \caption{Side view.}
+        \label{fig:car-v2-side-main}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/up.jpg}
+        \caption{Top view.}
+        \label{fig:car-v2-top-main}
+    \end{subfigure}
+    \caption{Three-view images of the second-generation robot platform.}
+    \label{fig:car-v2-views-main}
+\end{figure}
+
 \subsection{RTOS-Based Robot Control Architecture}
 
 To improve the real-time performance and structural clarity of the onboard control software, the robot-side system was implemented using an RTOS-based architecture. The whole system contains four core tasks: the WiFi feedback task, the robot control task, the photo-reading task, and the position-estimation task. These tasks cooperate with different responsibilities so that communication, motion execution, image update, and pose estimation can proceed in parallel.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.92\textwidth]{figures/robot_code_architecture.drawio.png}
+    \includegraphics[width=0.92\columnwidth]{figures/robot_code_architecture.drawio.png}
     \caption{RTOS-based robot control architecture centered on the shared \texttt{robot state} object.}
     \label{fig:robot-code-architecture}
 \end{figure}
@@ -258,32 +294,32 @@ where \(c\) is the local complexity value.
 \paragraph{Environment types and state conversion.}
 \begin{figure}[htbp]
 \centering
-\begin{subfigure}[b]{0.64\textwidth}
+\begin{subfigure}[b]{0.64\columnwidth}
     \centering
-    \includegraphics[width=\textwidth]{figures/2Dmap/WALL.png}
+    \includegraphics[width=\columnwidth]{figures/2Dmap/WALL.png}
     \caption{Wall or step obstacle.}
     \label{fig:2dmap-wall}
 \end{subfigure}
 \hfill
-\begin{subfigure}[b]{0.315\textwidth}
+\begin{subfigure}[b]{0.315\columnwidth}
     \centering
-    \includegraphics[width=\textwidth]{figures/2Dmap/Suspended BLOCK.png}
+    \includegraphics[width=\columnwidth]{figures/2Dmap/Suspended BLOCK.png}
     \caption{Suspended obstacle.}
     \label{fig:2dmap-suspended}
 \end{subfigure}
 
 \vspace{0.5em}
 
-\begin{subfigure}[b]{0.47\textwidth}
+\begin{subfigure}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\textwidth]{figures/2Dmap/SLOPE.png}
+    \includegraphics[width=\columnwidth]{figures/2Dmap/SLOPE.png}
     \caption{Slope or traversable uneven region.}
     \label{fig:2dmap-slope}
 \end{subfigure}
 \hfill
-\begin{subfigure}[b]{0.47\textwidth}
+\begin{subfigure}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\textwidth]{figures/2Dmap/PIT.png}
+    \includegraphics[width=\columnwidth]{figures/2Dmap/PIT.png}
     \caption{Pit or cliff-like region.}
     \label{fig:2dmap-pit}
 \end{subfigure}
@@ -299,7 +335,42 @@ Pits and cliffs exhibit a different behavior. Due to viewpoint limitations, thes
 
 
 \paragraph{Map overwrite and merging.}
-In the global map construction process, each grid cell is associated with its corresponding real-world coordinate. To save computational cost, each frame of map merging updates only the changed point-cloud data, and the 2D map module performs overwrite-based merging on the corresponding cells. This strategy is based on the assumption that, under ideal conditions, repeated point-cloud merging gradually reduces error and produces more accurate geometry. Therefore, newly observed results are used to overwrite previous ones. Through this mechanism, cells originally marked as \texttt{unknown} can also be updated into \texttt{costing} or \texttt{block}, allowing the global 2D map to evolve continuously during the scanning process.
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.42\columnwidth}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/merge2dmap/2/map_costmap_view.jpg}
+    \caption{Step 1}
+    \label{fig:merge2dmap-step1}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.44\columnwidth}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/merge2dmap/3/map_costmap_view.jpg}
+    \caption{Step 2}
+    \label{fig:merge2dmap-step2}
+\end{subfigure}
+
+\vspace{0.5em}
+
+\begin{subfigure}[b]{0.46\columnwidth}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/merge2dmap/4/map_costmap_view.jpg}
+    \caption{Step 3}
+    \label{fig:merge2dmap-step3}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.46\columnwidth}
+    \centering
+    \includegraphics[width=\columnwidth]{figures/merge2dmap/5/map_costmap_view.jpg}
+    \caption{Step 4}
+    \label{fig:merge2dmap-step4}
+\end{subfigure}
+\caption{Overwrite-based global 2D map update during successive merging steps.}
+\label{fig:merge2dmap-process}
+\end{figure}
+
+In the global map construction process, each grid cell is associated with its corresponding real-world coordinate. To save computational cost, each frame of map merging updates only the changed point-cloud data, and the 2D map module performs overwrite-based merging on the corresponding cells. This strategy is based on the assumption that, under ideal conditions, repeated point-cloud merging gradually reduces error and produces more accurate geometry. Therefore, newly observed results are used to overwrite previous ones. Through this mechanism, cells originally marked as \texttt{unknown} can also be updated into \texttt{costing} or \texttt{block}, allowing the global 2D map to evolve continuously during the scanning process. A typical overwrite-based update sequence is shown in Fig.~\ref{fig:merge2dmap-process}.
 
 
 
@@ -307,6 +378,123 @@ In the global map construction process, each grid cell is associated with its co
 
 
 
+
+
+\appendices
+
+\section{Hardware Iteration of the Robot Platform}
+\label{app:hardware-iteration}
+
+To satisfy the requirements of low cost, small size, and extensibility in the swarm monocular SLAM system, two generations of robot platforms were developed in this work. Overall, the hardware design followed two main principles: minimizing the number of sensors as much as possible, and maximizing system integration to reduce both cost and implementation complexity. On the software side, the design aimed to keep different modules decoupled from one another, as well as to decouple the robots from the host computer, so as to improve flexibility and maintainability. The robot platform was required to support image capture, wireless communication, rotation and translation, and coarse pose estimation.
+
+\subsection{First-Generation Robot}
+
+The first-generation robot shared the same overall goal as the final robot platform, but adopted a more function-heavy mechanical structure. It used four \texttt{ULN2003} drivers to control four \texttt{28BYJ-48} stepper motors, together with a \texttt{TCA9555} expansion chip to provide sufficient control pins. In addition, two \texttt{MG90} servos were used to control the pitch and yaw of the camera, and multiple LEDs were added for auxiliary lighting.
+
+In the motion design, the first-generation robot adopted a ``stepper motor + acceleration gear train + omni-wheel'' configuration for movement and coarse position estimation. In principle, this design supported forward and backward motion, in-place rotation, and lateral translation. However, the structure also introduced several practical problems. The combination of stepper motors and gear sets occupied significant physical space, which caused the folded robot size to reach about \(25 \times 25 \times 15\text{ cm}\), and the working-state size to reach about \(25 \times 25 \times 35\text{ cm}\). Although this was still small compared with many conventional SLAM platforms, it was larger than desired for this project. Moreover, the \(1{:}2\) acceleration gear train pushed the stepper motors closer to their load limit, while the omni-wheel structure made slipping more likely and reduced the reliability of pose feedback. On sloped or uneven terrain, the four-wheel omni arrangement could also cause one wheel to lose effective contact with the ground, further reducing motion stability.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\columnwidth]{figures/car/v1.jpg}
+    \caption{First-generation robot platform.}
+    \label{fig:car-v1}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/v1Body_sch.png}
+        \caption{Body circuit.}
+        \label{fig:car-v1-body-sch}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/v1Head_sch.png}
+        \caption{Head circuit.}
+        \label{fig:car-v1-head-sch}
+    \end{subfigure}
+    \caption{Circuit schematics of the first-generation robot.}
+    \label{fig:car-v1-sch}
+\end{figure}
+
+\subsection{Second-Generation Robot}
+
+To address the limitations of the first-generation platform in size, power consumption, stability, and pose estimation accuracy, a second-generation robot was developed. The size of the second-generation robot was significantly reduced to approximately \(10 \times 10 \times 10\text{ cm}\), which better satisfied the project requirements for miniaturization and low cost.
+
+The second-generation robot adopted \texttt{ESP32-CAM} as the main controller. This chip provides relatively strong performance in a compact form factor, while also integrating Wi-Fi communication and a camera interface, which makes it well suited for this project. Although the number of available pins is limited, the hardware requirements of the system can still be satisfied by reusing several special-purpose pins. In the camera module, \texttt{OV3660} was selected because it supports a resolution of \(1024 \times 768\), which is close to the effective input scale of Depth Pro and therefore helps reduce unnecessary stretching loss or compression loss. Its field of view is about \(45^\circ\), and lens distortion is small, which allows a relatively large scanning range without introducing strong geometric distortion. In addition, image capture is performed using the \texttt{OV3660} together with LED illumination.
+
+For motion, the second-generation robot uses an \texttt{L298N} motor driver together with \texttt{N15} DC geared motors, two rubber drive wheels, and a rear omni-wheel for support and rotation assistance. Compared with the stepper-motor-based first-generation design, this arrangement provides better speed, stability, and resistance to slipping. The robot realizes forward motion, backward motion, and in-place left or right rotation through motor forward and reverse control.
+
+For pose feedback, the second-generation robot uses an \texttt{MPU6050} IMU. This sensor includes a DMP chip, which reduces the computational burden of additional integration on the main controller, and it is also widely used and well documented. The final pose estimation strategy of the second-generation platform combines timed DC motor control with IMU-based rotation feedback. In practice, this design performed significantly better than the first-generation one, achieving a rotation error of about \(\pm 3^\circ\) per \(180^\circ\) turn, and a forward/backward error of about \(\pm 5\text{ mm}\) per \(10\text{ cm}\) of travel.
+
+Several functions of the first-generation robot were intentionally removed in the second-generation design. Lateral translation was removed because it was rarely needed in practice and could be replaced by in-place rotation followed by forward or backward motion. The camera pitch and yaw servos were also removed, since yaw could be replaced by robot self-rotation, while pitch-view depth conversion introduced a large error of about \(\pm 20\text{ cm}\) per \(1\text{ m}\) distance. In addition, the number of LEDs was reduced because experiments showed that the effect of four dedicated fill lights was almost the same as that of one additional LED together with the built-in LED of the \texttt{ESP32-CAM}. These changes significantly reduced the overall size and structural complexity of the robot.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/front.jpg}
+        \caption{Front view.}
+        \label{fig:car-v2-front}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/side.jpg}
+        \caption{Side view.}
+        \label{fig:car-v2-side}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth]{figures/car/up.jpg}
+        \caption{Top view.}
+        \label{fig:car-v2-top}
+    \end{subfigure}
+    \caption{Three-view images of the second-generation robot platform.}
+    \label{fig:car-v2-views}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\columnwidth]{figures/car/V2_sch.png}
+    \caption{Circuit schematic of the second-generation robot.}
+    \label{fig:car-v2-sch}
+\end{figure}
+
+\subsection{Bill of Materials and Cost Estimate}
+
+To further demonstrate the low-cost characteristic of the second-generation robot, Table~\ref{tab:robot-bom} summarizes the main bill of materials (BOM) entries based on the exported component list. The quoted prices are taken from the JLC/LCSC marketplace~\cite{lcsc_marketplace}, and all prices are given in RMB. After including the 7.4V lithium battery, the subtotal of the priced entries is RMB 93.54, which is approximately GBP 10 depending on the exchange rate.
+
+\begin{table}[h]
+\caption{Main BOM entries of the second-generation robot platform.}
+\label{tab:robot-bom}
+\centering
+\footnotesize
+\begin{tabular}{|l|c|c|}
+\hline
+Component & Quantity & Subtotal (RMB) \\
+\hline
+ESP32-CAM & 1 & 46.83 \\
+7.4V lithium battery & 1 & 33.40 \\
+L298N motor driver & 1 & 6.19 \\
+NCE6020AK MOSFET & 1 & 0.99 \\
+XT30UPB-F connector & 1 & 1.29 \\
+Electrolytic capacitors & 2 & 0.66 \\
+PESD12VL2BT-ES protection diode & 1 & 0.32 \\
+1N4007W diodes & 8 & 0.32 \\
+Headers and motor connectors & -- & 3.53 \\
+\hline
+Total & -- & 93.54 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Comparison Between the Two Generations}
+
+Overall, both robot generations were designed for low-cost monocular SLAM scanning, but they represent two different engineering trade-offs. The first-generation robot emphasized function completeness, including lateral translation, camera pan-tilt control, and more auxiliary lighting, but this resulted in a larger size, higher mechanical complexity, and poorer motion stability. The second-generation robot instead focused on preserving only the core functions required by the project, namely image capture, wireless communication, motion execution, and coarse pose estimation. Through this simplification, the second-generation design achieved better compactness, lower complexity, and improved motion accuracy. Therefore, the second-generation robot was finally selected as the hardware platform used in this work.
 
 \bibliographystyle{alpha}
 \bibliography{sample}
