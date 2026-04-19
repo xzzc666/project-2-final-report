@@ -1,10 +1,63 @@
-\begin{thebibliography}{{LCS}26}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{{STM}23}
+
+\bibitem[Elf89]{elfes1989occupancy}
+Alberto Elfes.
+\newblock Using occupancy grids for mobile robot perception and navigation.
+\newblock {\em Computer}, 22(6):46--57, 1989.
+
+\bibitem[{Esp}26]{espressif_esp32_hwref}
+{Espressif Systems}.
+\newblock {\em ESP32 Hardware Reference}.
+\newblock Espressif Systems, 2026.
+\newblock Official hardware reference for ESP32, including datasheet and
+  technical reference links. Accessed: 2026-04-20.
+
+\bibitem[{Fre}25]{freertos_ref_manual}
+{FreeRTOS}.
+\newblock {\em FreeRTOS Reference Manual}.
+\newblock FreeRTOS, 2025.
+\newblock Official reference manual covering tasks, mutexes, and priority
+  inheritance. Accessed: 2026-04-20.
+
+\bibitem[GCH08]{gu2008traversability}
+Jiajun Gu, Qixin Cao, and Yi~Huang.
+\newblock Rapid traversability assessment in 2.5d grid-based map on rough
+  terrain.
+\newblock {\em International Journal of Advanced Robotic Systems},
+  5(4):389--398, 2008.
+
+\bibitem[{Inv}13]{invensense_mpu6050}
+{InvenSense}.
+\newblock {\em MPU-6000 and MPU-6050 Product Specification}.
+\newblock InvenSense, 2013.
+\newblock Revision 3.4, official product specification. Accessed: 2026-04-20.
 
 \bibitem[{LCS}26]{lcsc_marketplace}
-{LCSC Electronics}.
-\newblock Lcsc electronics marketplace.
-\newblock \url{https://www.lcsc.com/}, 2026.
+{LCSC}.
+\newblock Lcsc component marketplace.
+\newblock \url{https://www.szlcsc.com/}, 2026.
 \newblock Component price source used for the BOM in this work. Accessed:
   2026-04-19.
+
+\bibitem[MCL{\etalchar{+}}18]{meng2018terrain}
+Xiangrui Meng, Zhiqiang Cao, Shuang Liang, Lei Pang, Shuo Wang, and Chao Zhou.
+\newblock A terrain description method for traversability analysis based on
+  elevation grid map.
+\newblock {\em International Journal of Advanced Robotic Systems}, 15(1):1--12,
+  2018.
+
+\bibitem[{STM}23]{st_l298}
+{STMicroelectronics}.
+\newblock {\em L298 Dual Full-Bridge Driver Datasheet}.
+\newblock STMicroelectronics, 2023.
+\newblock Official datasheet, Rev 5. Accessed: 2026-04-20.
+
+\bibitem[WJM13]{weinmann2013feature}
+Martin Weinmann, Boris Jutzi, and Cl{\'e}ment Mallet.
+\newblock Feature relevance assessment for the semantic interpretation of 3d
+  point cloud data.
+\newblock {\em ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial
+  Information Sciences}, II-5/W2:313--318, 2013.
 
 \end{thebibliography}

@@ -1,0 +1,82 @@
+2dmap
+@article{article,
+author = {Elfes, Alberto},
+year = {1989},
+month = {07},
+pages = {46 - 57},
+title = {Using Occupancy Grids for Mobile Robot Perception and Navigation},
+volume = {22},
+journal = {Computer},
+doi = {10.1109/2.30720}
+}
+
+@article{doi:10.5772/6233,
+author = {Jiajun Gu and Qixin Cao and Yi Huang},
+title ={Rapid Traversability Assessment in 2.5D Grid-based Map on Rough Terrain},
+
+journal = {International Journal of Advanced Robotic Systems},
+volume = {5},
+number = {4},
+pages = {40},
+year = {2008},
+doi = {10.5772/6233},
+
+URL = { 
+    
+        https://doi.org/10.5772/6233
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.5772/6233
+    
+    
+
+}
+,
+    abstract = { This paper presents a rapid traversability assessment approach based on an extended 2.5D grid-based representaion of the rough terrain. Stereo vision system is used to perceive the environment surrounding robot. Conventional 2D, 3D and other 2.5D grid maps determine the traversability indices of the grids directly from the sensor feedback, while our approach attempts to address the indices of terrain from multiple grids instead. By analyzing the properties of multiple grids that the robot is to traverse, passable grids are distinguished, which also takes the robot's size into account. Fuzzy logic framework is applied to extract traversabiltiy indices from the terrain characteristics. A soccer robot equipped with a stereo vision system is adopted for experiments. The results show that our map is capable of speeding the process of traversability assessment and providing an autonomous mobile robot with a appropriate representation of 3D uneven terrain profile. }
+}
+
+@article{doi:10.1177/1729881417751530,
+author = {Xiangrui Meng and Zhiqiang Cao and Shuang Liang and Lei Pang and Shuo Wang and Chao Zhou},
+title ={A terrain description method for traversability analysis based on elevation grid map},
+
+journal = {International Journal of Advanced Robotic Systems},
+volume = {15},
+number = {1},
+pages = {1729881417751530},
+year = {2018},
+doi = {10.1177/1729881417751530},
+
+URL = { 
+    
+        https://doi.org/10.1177/1729881417751530
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1177/1729881417751530
+    
+    
+
+}
+,
+    abstract = { Terrain traversability analysis is a challenging problem for mobile robots to adapt to complex environments, including the detection of cluttered obstacles, potholes, or even slopes. With the accurate distance information, using distance sensors such as three-dimensional light detection and ranging (LiDAR) for terrain description becomes a preferred choice. In this article, a terrain description method for traversability analysis based on elevation grid map is presented. After the elevation grid map is generated, the ground is segmented with the aid of a height difference kernel and the non-ground grids in the map are then clustered. The terrain description features, including height index, roughness, and slope angle, are calculated and estimated. The slope angle is estimated using random sample consensus (RANSAC) and least squares method, and specifically, the roughness is combined to eliminate false slopes. Experimental results verified the effectiveness of the proposed method. }
+}
+
+
+@Article{isprs-annals-II-5-W2-313-2013,
+AUTHOR = {Weinmann, M. and Jutzi, B. and Mallet, C.},
+TITLE = {Feature relevance assessment for the semantic interpretation of 3D point cloud data},
+JOURNAL = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+VOLUME = {II-5/W2},
+YEAR = {2013},
+PAGES = {313--318},
+URL = {https://isprs-annals.copernicus.org/articles/II-5-W2/313/2013/},
+DOI = {10.5194/isprsannals-II-5-W2-313-2013}
+}
+

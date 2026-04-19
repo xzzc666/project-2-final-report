@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1776538491.31101 "main.aux" "main.bbl" "main" 1776538494.54219 0
-  "./sample.bib" 1776538456 281 8de15a28f2ca6a3a89900d8fa511b7a7 ""
+["bibtex main"] 1776635379.99137 "main.aux" "main.bbl" "main" 1776635509.57792 0
+  "./sample.bib" 1776633631 3382 80063867b8f7a4bd5e632d23574e7423 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1776538493 10208 f6d07c6725c498bb1bbc20dec2bf9a2f "pdflatex"
+  "main.aux" 1776635508 12912 9b1c5525731697427d903c89c382bf3c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776538491.60367 "d:/MyCode/latex/project2/main.tex" "main.pdf" "main" 1776538494.54287 0
+["pdflatex"] 1776635506.61943 "d:/MyCode/latex/project2/main.tex" "main.pdf" "main" 1776635509.5784 0
   "C:/Users/dongz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1776289544 202101 cad7bc6f2770a48f6562a2823a2b2dab ""
   "C:/Users/dongz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1761703651 13321868 1b135950246dc5905a8ebdd7c3de39c2 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -42,6 +42,7 @@
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
+  "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
@@ -117,7 +118,7 @@
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/dongz/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "d:/MyCode/latex/project2/main.tex" 1776538484 38016 78ca806ad6ad17d9188f2f75d4e225e8 ""
+  "d:/MyCode/latex/project2/main.tex" 1776635505 41268 dd59fb1845b1c36055bc7ce6c8463bd7 ""
   "figures/2Dmap/PIT.png" 1776350387 25595 d32e01c002483db2d9fedf4461cb0d64 ""
   "figures/2Dmap/SLOPE.png" 1776346467 10480 6ade9c49bbd04a61fe82fa3dee23ba75 ""
   "figures/2Dmap/Suspended BLOCK.png" 1776346532 11959 0f4741e9b907ddd835d6ac6de38ef79e ""
@@ -138,10 +139,10 @@
   "figures/overview flow chat.png" 1776339620 579197 8e3bbb5d00ee14a0d44a614e218b3e31 ""
   "figures/robot_code_architecture.drawio.png" 1776535143 172011 d5ef1f812994ada21d3772132f2bf3eb ""
   "figures/smallev.png" 1776291937 22986 8e1f28986d2a5c3785b5cfc0e5a5b3f4 ""
-  "main.aux" 1776538493 10208 f6d07c6725c498bb1bbc20dec2bf9a2f "pdflatex"
-  "main.bbl" 1776538491 296 4381b73c8ac2aedc812b369d78efa2d2 "bibtex main"
-  "main.out" 1776538493 4519 a1ca2bcf097e7096f3c5fcd9bcc259f9 "pdflatex"
-  "main.tex" 1776538484 38016 78ca806ad6ad17d9188f2f75d4e225e8 ""
+  "main.aux" 1776635508 12912 9b1c5525731697427d903c89c382bf3c "pdflatex"
+  "main.bbl" 1776635380 2342 4fa5d1a52ada450a2d8fca01ed531bdf "bibtex main"
+  "main.out" 1776635508 5778 1d2ea74bcafcea2e65f04144ff971978 "pdflatex"
+  "main.tex" 1776635505 41268 dd59fb1845b1c36055bc7ce6c8463bd7 ""
   (generated)
   "main.aux"
   "main.log"

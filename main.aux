@@ -2,13 +2,21 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{elfes1989occupancy}
+\citation{elfes1989occupancy,gu2008traversability}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Lecture review}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {II}Theoretical Background}{1}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Relative Pose Estimation of the Robot}{1}{subsection.2.1}\protected@file@percent }
+\newlabel{subsec:relative-pose-estimation-zhuyu-dong}{{\mbox  {II-A}}{1}{Relative Pose Estimation of the Robot}{subsection.2.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-A}1}Coordinate Systems and the Chain Rule}{1}{subsubsection.2.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-A}2}Coordinate Transformation Update Based on Velocity and Attitude}{1}{subsubsection.2.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Theoretical Background of 2D Map Generation}{1}{subsection.2.2}\protected@file@percent }
+\newlabel{subsec:2dmap-theory-zhuyu-dong}{{\mbox  {II-B}}{1}{Theoretical Background of 2D Map Generation}{subsection.2.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}1}Two-Dimensional Grid Map and Its Role}{1}{subsubsection.2.2.1}\protected@file@percent }
+\citation{meng2018terrain}
+\citation{meng2018terrain,gu2008traversability}
+\citation{weinmann2013feature}
+\citation{weinmann2013feature}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}2}Ground Layer Selection}{2}{subsubsection.2.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}3}Eigenvalues and Eigenvectors}{2}{subsubsection.2.2.3}\protected@file@percent }
 \newlabel{fig:smallev}{{1a}{2}{Cell with smaller minimum eigenvalue}{figure.caption.1}{}}
@@ -18,13 +26,17 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces cells with different minimum eigenvalues.}}{2}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:eigenvalue-comparison}{{1}{2}{cells with different minimum eigenvalues}{figure.caption.1}{}}
+\citation{espressif_esp32_hwref,invensense_mpu6050,st_l298}
+\citation{freertos_ref_manual}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Methods}{3}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Swarm Scanning and Centralized Processing Architecture}{3}{subsection.3.1}\protected@file@percent }
+\newlabel{subsec:swarm-centralized-architecture-zhuyu-dong}{{\mbox  {III-A}}{3}{Swarm Scanning and Centralized Processing Architecture}{subsection.3.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Centralized processing architecture for swarm monocular SLAM robots.}}{3}{figure.caption.2}\protected@file@percent }
 \newlabel{fig:centralized-architecture}{{2}{3}{Centralized processing architecture for swarm monocular SLAM robots}{figure.caption.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Overview flow chart of single-robot control and data acquisition.}}{3}{figure.caption.3}\protected@file@percent }
 \newlabel{fig:overview-flow}{{3}{3}{Overview flow chart of single-robot control and data acquisition}{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Robot Platform}{3}{subsection.3.2}\protected@file@percent }
+\newlabel{subsec:robot-platform-zhuyu-dong}{{\mbox  {III-B}}{3}{Robot Platform}{subsection.3.2}{}}
 \newlabel{fig:car-v2-front-main}{{4a}{3}{Front view}{figure.caption.4}{}}
 \newlabel{sub@fig:car-v2-front-main}{{a}{3}{Front view}{figure.caption.4}{}}
 \newlabel{fig:car-v2-side-main}{{4b}{3}{Side view}{figure.caption.4}{}}
@@ -34,10 +46,24 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Three-view images of the second-generation robot platform.}}{3}{figure.caption.4}\protected@file@percent }
 \newlabel{fig:car-v2-views-main}{{4}{3}{Three-view images of the second-generation robot platform}{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}RTOS-Based Robot Control Architecture}{3}{subsection.3.3}\protected@file@percent }
+\newlabel{subsec:rtos-robot-control-zhuyu-dong}{{\mbox  {III-C}}{3}{RTOS-Based Robot Control Architecture}{subsection.3.3}{}}
+\citation{freertos_ref_manual}
+\citation{freertos_ref_manual}
+\citation{elfes1989occupancy,gu2008traversability}
+\citation{meng2018terrain}
+\citation{gu2008traversability,meng2018terrain}
+\citation{weinmann2013feature}
+\citation{weinmann2013feature}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces RTOS-based robot control architecture centered on the shared \texttt  {robot state} object.}}{4}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:robot-code-architecture}{{5}{4}{RTOS-based robot control architecture centered on the shared \texttt {robot state} object}{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}2D Map Generation and Cost Modeling}{4}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-D}0a}Costing computation.}{4}{paragraph.3.4.0.1}\protected@file@percent }
+\newlabel{subsec:2dmap-generation-cost-modeling-zhuyu-dong}{{\mbox  {III-D}}{4}{2D Map Generation and Cost Modeling}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-D}1}Costing computation.}{4}{subsubsection.3.4.1}\protected@file@percent }
+\citation{gu2008traversability,meng2018terrain}
+\bibstyle{alpha}
+\bibdata{sample}
+\bibcite{elfes1989occupancy}{Elf89}
+\bibcite{espressif_esp32_hwref}{{Esp}26}
 \newlabel{fig:2dmap-wall}{{6a}{5}{Wall or step obstacle}{figure.caption.6}{}}
 \newlabel{sub@fig:2dmap-wall}{{a}{5}{Wall or step obstacle}{figure.caption.6}{}}
 \newlabel{fig:2dmap-suspended}{{6b}{5}{Suspended obstacle}{figure.caption.6}{}}
@@ -48,7 +74,7 @@
 \newlabel{sub@fig:2dmap-pit}{{d}{5}{Pit or cliff-like region}{figure.caption.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Typical obstacle and terrain types considered in the 2D map generation process.}}{5}{figure.caption.6}\protected@file@percent }
 \newlabel{fig:2dmap-obstacles}{{6}{5}{Typical obstacle and terrain types considered in the 2D map generation process}{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-D}0b}Environment types and state conversion.}{5}{figure.caption.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-D}2}Environment types and state conversion.}{5}{figure.caption.6}\protected@file@percent }
 \newlabel{fig:merge2dmap-step1}{{7a}{5}{Step 1}{figure.caption.7}{}}
 \newlabel{sub@fig:merge2dmap-step1}{{a}{5}{Step 1}{figure.caption.7}{}}
 \newlabel{fig:merge2dmap-step2}{{7b}{5}{Step 2}{figure.caption.7}{}}
@@ -59,36 +85,50 @@
 \newlabel{sub@fig:merge2dmap-step4}{{d}{5}{Step 4}{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Overwrite-based global 2D map update during successive merging steps.}}{5}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:merge2dmap-process}{{7}{5}{Overwrite-based global 2D map update during successive merging steps}{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-D}0c}Map overwrite and merging.}{5}{figure.caption.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: Hardware Iteration of the Robot Platform}{5}{section*.8}\protected@file@percent }
-\newlabel{app:hardware-iteration}{{A}{5}{\appendixname \nobreakspace \thesectiondis \\* Hardware Iteration of the Robot Platform}{section*.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-A}}First-Generation Robot}{6}{subsection.Appendix.A.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces First-generation robot platform.}}{6}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:car-v1}{{8}{6}{First-generation robot platform}{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-B}}Second-Generation Robot}{6}{subsection.Appendix.A.2}\protected@file@percent }
-\newlabel{fig:car-v1-body-sch}{{9a}{6}{Body circuit}{figure.caption.10}{}}
-\newlabel{sub@fig:car-v1-body-sch}{{a}{6}{Body circuit}{figure.caption.10}{}}
-\newlabel{fig:car-v1-head-sch}{{9b}{6}{Head circuit}{figure.caption.10}{}}
-\newlabel{sub@fig:car-v1-head-sch}{{b}{6}{Head circuit}{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Circuit schematics of the first-generation robot.}}{6}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:car-v1-sch}{{9}{6}{Circuit schematics of the first-generation robot}{figure.caption.10}{}}
-\citation{lcsc_marketplace}
-\bibstyle{alpha}
-\bibdata{sample}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-D}3}Map overwrite and merging.}{5}{figure.caption.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{5}{section*.8}\protected@file@percent }
+\bibcite{freertos_ref_manual}{{Fre}25}
+\bibcite{gu2008traversability}{GCH08}
+\bibcite{invensense_mpu6050}{{Inv}13}
 \bibcite{lcsc_marketplace}{{LCS}26}
-\newlabel{fig:car-v2-front}{{10a}{7}{Front view}{figure.caption.11}{}}
-\newlabel{sub@fig:car-v2-front}{{a}{7}{Front view}{figure.caption.11}{}}
-\newlabel{fig:car-v2-side}{{10b}{7}{Side view}{figure.caption.11}{}}
-\newlabel{sub@fig:car-v2-side}{{b}{7}{Side view}{figure.caption.11}{}}
-\newlabel{fig:car-v2-top}{{10c}{7}{Top view}{figure.caption.11}{}}
-\newlabel{sub@fig:car-v2-top}{{c}{7}{Top view}{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Three-view images of the second-generation robot platform.}}{7}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:car-v2-views}{{10}{7}{Three-view images of the second-generation robot platform}{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Circuit schematic of the second-generation robot.}}{7}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:car-v2-sch}{{11}{7}{Circuit schematic of the second-generation robot}{figure.caption.12}{}}
+\bibcite{meng2018terrain}{MCL{$^{+}$}18}
+\bibcite{st_l298}{{STM}23}
+\bibcite{weinmann2013feature}{WJM13}
+\citation{espressif_esp32_hwref}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Contribution}{6}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Roles of Team Members in the Project}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Sections Written by Each Team Member}{6}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: Hardware Iteration of the Robot Platform}{6}{section*.9}\protected@file@percent }
+\newlabel{app:hardware-iteration}{{A}{6}{\appendixname \nobreakspace \thesectiondis \\* Hardware Iteration of the Robot Platform}{section*.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-A}}First-Generation Robot}{6}{subsection.Appendix.A.1}\protected@file@percent }
+\newlabel{subsec:first-generation-robot-zhuyu-dong}{{\mbox  {A-A}}{6}{First-Generation Robot}{subsection.Appendix.A.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-B}}Second-Generation Robot}{6}{subsection.Appendix.A.2}\protected@file@percent }
+\newlabel{subsec:second-generation-robot-zhuyu-dong}{{\mbox  {A-B}}{6}{Second-Generation Robot}{subsection.Appendix.A.2}{}}
+\citation{st_l298}
+\citation{invensense_mpu6050}
+\citation{lcsc_marketplace}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces First-generation robot platform.}}{7}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:car-v1}{{8}{7}{First-generation robot platform}{figure.caption.10}{}}
+\newlabel{fig:car-v1-body-sch}{{9a}{7}{Body circuit}{figure.caption.11}{}}
+\newlabel{sub@fig:car-v1-body-sch}{{a}{7}{Body circuit}{figure.caption.11}{}}
+\newlabel{fig:car-v1-head-sch}{{9b}{7}{Head circuit}{figure.caption.11}{}}
+\newlabel{sub@fig:car-v1-head-sch}{{b}{7}{Head circuit}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Circuit schematics of the first-generation robot.}}{7}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:car-v1-sch}{{9}{7}{Circuit schematics of the first-generation robot}{figure.caption.11}{}}
+\newlabel{fig:car-v2-front}{{10a}{7}{Front view}{figure.caption.12}{}}
+\newlabel{sub@fig:car-v2-front}{{a}{7}{Front view}{figure.caption.12}{}}
+\newlabel{fig:car-v2-side}{{10b}{7}{Side view}{figure.caption.12}{}}
+\newlabel{sub@fig:car-v2-side}{{b}{7}{Side view}{figure.caption.12}{}}
+\newlabel{fig:car-v2-top}{{10c}{7}{Top view}{figure.caption.12}{}}
+\newlabel{sub@fig:car-v2-top}{{c}{7}{Top view}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Three-view images of the second-generation robot platform.}}{7}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:car-v2-views}{{10}{7}{Three-view images of the second-generation robot platform}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Circuit schematic of the second-generation robot.}}{7}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:car-v2-sch}{{11}{7}{Circuit schematic of the second-generation robot}{figure.caption.13}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-C}}Bill of Materials and Cost Estimate}{7}{subsection.Appendix.A.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Main BOM entries of the second-generation robot platform.}}{7}{table.caption.13}\protected@file@percent }
-\newlabel{tab:robot-bom}{{I}{7}{Main BOM entries of the second-generation robot platform}{table.caption.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-D}}Comparison Between the Two Generations}{7}{subsection.Appendix.A.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{7}{section*.14}\protected@file@percent }
-\gdef \@abspage@last{7}
+\newlabel{subsec:bom-cost-estimate-zhuyu-dong}{{\mbox  {A-C}}{7}{Bill of Materials and Cost Estimate}{subsection.Appendix.A.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Main BOM entries of the second-generation robot platform.}}{8}{table.caption.14}\protected@file@percent }
+\newlabel{tab:robot-bom}{{I}{8}{Main BOM entries of the second-generation robot platform}{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {A-D}}Comparison Between the Two Generations}{8}{subsection.Appendix.A.4}\protected@file@percent }
+\newlabel{subsec:comparison-two-generations-zhuyu-dong}{{\mbox  {A-D}}{8}{Comparison Between the Two Generations}{subsection.Appendix.A.4}{}}
+\gdef \@abspage@last{8}

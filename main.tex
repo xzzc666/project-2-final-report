@@ -33,6 +33,7 @@ Your abstract.
 \section{Lecture review}
 \section{Theoretical Background}
 \subsection{Relative Pose Estimation of the Robot}
+\label{subsec:relative-pose-estimation-zhuyu-dong}
 
 \subsubsection{Coordinate Systems and the Chain Rule}
 
@@ -80,18 +81,19 @@ This formulation assumes that the robot motion within one time step mainly occur
 Using this recursive formulation together with the chain rule, the robot pose can be expressed not only in the global frame but also relative to any selected reference frame. However, since this method depends on the commanded velocity, the sampling interval, and the attitude measurement result, the estimation error accumulates over time. Therefore, external position feedback or other correction information should be introduced periodically to suppress long-term drift.
 
 \subsection{Theoretical Background of 2D Map Generation}
+\label{subsec:2dmap-theory-zhuyu-dong}
 
 \subsubsection{Two-Dimensional Grid Map and Its Role}
 
-To use a 3D point cloud for subsequent route search and path planning, the environment is first discretized into a two-dimensional grid map. The space is divided into regular cells with a fixed resolution, and each cell represents a local region of the environment. In this way, the originally continuous and large-scale point cloud is compressed into a regular discrete representation.
+To use a 3D point cloud for subsequent route search and path planning, the environment is first discretized into a two-dimensional grid map~\cite{elfes1989occupancy}. The space is divided into regular cells with a fixed resolution, and each cell represents a local region of the environment. In this way, the originally continuous and large-scale point cloud is compressed into a regular discrete representation.
 
-The main role of the 2D grid map is to provide a discretized search space for path-planning algorithms. Direct search on the raw point cloud is computationally expensive because the data scale is large and the adjacency relationship among points is complicated. After grid discretization, path search only needs to be performed among a finite number of cells, which makes the neighborhood relationship clearer and reduces the computational burden.
+The main role of the 2D grid map is to provide a discretized search space for path-planning algorithms. Direct search on the raw point cloud is computationally expensive because the data scale is large and the adjacency relationship among points is complicated. After grid discretization, path search only needs to be performed among a finite number of cells, which makes the neighborhood relationship clearer and reduces the computational burden~\cite{elfes1989occupancy,gu2008traversability}.
 
 In addition, the 2D grid map helps control the growth of complexity as the map becomes larger. Local geometric information in each region can be summarized by a traversal cost \(cost\), where a larger value indicates more difficult traversal and a smaller value indicates better traversability. In this way, the environment is represented as a collection of cost-associated cells, which provides a compact and efficient input for subsequent path planning.
 
 \subsubsection{Ground Layer Selection}
 
-During the construction of a two-dimensional grid map, a single grid cell may contain more than one layer of points. In addition to the actual ground, points may also come from the bottom of obstacles, suspended structures, or noise. Therefore, the lowest point in a cell cannot be directly regarded as the ground. To address this issue, candidate layers are first constructed along the vertical direction in each grid cell, and then the layer that most likely represents the actual ground is selected.
+During the construction of a two-dimensional grid map, a single grid cell may contain more than one layer of points. In addition to the actual ground, points may also come from the bottom of obstacles, suspended structures, or noise. Therefore, the lowest point in a cell cannot be directly regarded as the ground. To address this issue, candidate layers are first constructed along the vertical direction in each grid cell, and then the layer that most likely represents the actual ground is selected~\cite{meng2018terrain}.
 
 Let the candidate layer set of the \(i\)-th grid cell be
 \[
@@ -103,7 +105,7 @@ h_{i,k} = \frac{1}{N_{i,k}} \sum_{p \in L_{i,k}} y(p)
 \]
 where \(N_{i,k}\) is the number of points in \(L_{i,k}\), and \(y(p)\) is the height coordinate of point \(p\).
 
-Since the actual ground is usually locally continuous, ground-layer selection should depend not only on the height distribution inside the current cell but also on the ground height of neighboring cells. Let \(\hat{h}_{\mathcal{N}(i)}\) denote the reference ground height in the neighborhood of the \(i\)-th cell. Then the ground layer of the current cell can be defined as
+Since the actual ground is usually locally continuous, ground-layer selection should depend not only on the height distribution inside the current cell but also on the ground height of neighboring cells~\cite{meng2018terrain,gu2008traversability}. Let \(\hat{h}_{\mathcal{N}(i)}\) denote the reference ground height in the neighborhood of the \(i\)-th cell. Then the ground layer of the current cell can be defined as
 \[
 L_i^\ast = \arg\min_{L_{i,k} \in \mathcal{L}_i}
 \left| h_{i,k} - \hat{h}_{\mathcal{N}(i)} \right|
@@ -116,7 +118,7 @@ where \(\tau_h\) is the ground-continuity threshold. This candidate-layer select
 
 \subsubsection{Eigenvalues and Eigenvectors}
 
-After ground-layer selection, the local geometric characteristics of each grid cell still need to be analyzed in order to evaluate traversability. In this work, eigen-analysis is not performed on the entire map as a whole. Instead, it is carried out separately for each grid cell by constructing a covariance matrix from its local point set. As a result, the obtained eigenvalues and eigenvectors describe the local surface properties of each individual cell rather than the global properties of the entire map.
+After ground-layer selection, the local geometric characteristics of each grid cell still need to be analyzed in order to evaluate traversability. In this work, eigen-analysis is not performed on the entire map as a whole. Instead, it is carried out separately for each grid cell by constructing a covariance matrix from its local point set~\cite{weinmann2013feature}. As a result, the obtained eigenvalues and eigenvectors describe the local surface properties of each individual cell rather than the global properties of the entire map.
 
 For the \(i\)-th grid cell, let its local point set be
 \[
@@ -139,7 +141,7 @@ with
 \lambda_{i,1}\le \lambda_{i,2}\le \lambda_{i,3}
 \]
 
-If the local point set in the cell is approximately distributed on a plane, then the eigenvector corresponding to the smallest eigenvalue, \(n_{i,1}\), can be regarded as the approximate normal vector of the local ground surface. Let the unit vertical direction be
+If the local point set in the cell is approximately distributed on a plane, then the eigenvector corresponding to the smallest eigenvalue, \(n_{i,1}\), can be regarded as the approximate normal vector of the local ground surface~\cite{weinmann2013feature}. Let the unit vertical direction be
 \[
 v=
 \begin{bmatrix}
@@ -185,6 +187,7 @@ Therefore, the eigenvector associated with the smallest eigenvalue mainly descri
 \section{Methods}
 
 \subsection{Swarm Scanning and Centralized Processing Architecture}
+\label{subsec:swarm-centralized-architecture-zhuyu-dong}
 
 This work adopts a swarm-based scanning strategy, in which multiple robots scan the environment in parallel. Compared with a single-robot solution that scans the scene region by region, this approach can collect environmental information over a larger area within a shorter time. Meanwhile, the number of deployed robots can be adjusted according to the environment size and practical constraints such as time and cost, which makes the overall scheme more flexible.
 
@@ -208,8 +211,9 @@ Since AI-based models are used in the subsequent processing stages, the system r
 The overall operation flow is shown in Fig.~\ref{fig:overview-flow}. After the host computer receives the images and coarse pose estimates uploaded by the robots, it first applies Depth Pro to convert the images into depth maps, and then reconstructs the point cloud corresponding to each image. Based on the coarse pose estimates, the host computer performs post-processing on each point cloud and merges it into the global point cloud. At the same time, the current robot pose can be further refined using the feedback from the merging error, so that a more accurate pose estimate is obtained. On this basis, the global point cloud is further converted into a 2D map, which is used to determine traversable regions, blocked regions, unexplored regions, and the traversal cost of different areas. The path-planning module then generates paths and motion commands for each robot according to the refined poses and the current 2D map. When all robots have completed the scanning task, that is, when no further valid path can be planned, the scanning process ends. Finally, the merged global point cloud is exported as the output of the complete scanning task.
 
 \subsection{Robot Platform}
+\label{subsec:robot-platform-zhuyu-dong}
 
-The final robot platform adopted in this work is the second-generation robot. It was designed as a compact and highly integrated platform with a size of approximately \(10 \times 10 \times 10\text{ cm}\), and includes image acquisition, wireless communication, motion execution, and coarse pose estimation capabilities. The platform uses an \texttt{ESP32-CAM} controller, an \texttt{OV3660} camera, an \texttt{MPU6050} IMU, and a motor-driving structure based on \texttt{L298N} and \texttt{N15} geared DC motors. This design provides the minimum hardware functions required by the system while keeping the robot small and low-cost. Based on the priced BOM entries listed in Appendix~\ref{app:hardware-iteration}, the hardware cost of a single robot is approximately GBP 10. Further details are provided in Appendix~\ref{app:hardware-iteration}.
+The final robot platform adopted in this work is the second-generation robot. It was designed as a compact and highly integrated platform with a size of approximately \(10 \times 10 \times 10\text{ cm}\), and includes image acquisition, wireless communication, motion execution, and coarse pose estimation capabilities. The platform uses an \texttt{ESP32-CAM} controller, an \texttt{OV3660} camera, an \texttt{MPU6050} IMU, and a motor-driving structure based on \texttt{L298N} and \texttt{N15} geared DC motors~\cite{espressif_esp32_hwref,invensense_mpu6050,st_l298}. This design provides the minimum hardware functions required by the system while keeping the robot small and low-cost. Based on the priced BOM entries listed in Appendix~\ref{app:hardware-iteration}, the hardware cost of a single robot is approximately GBP 10. Further details are provided in Appendix~\ref{app:hardware-iteration}.
 
 
 \begin{figure}[htbp]
@@ -239,8 +243,9 @@ The final robot platform adopted in this work is the second-generation robot. It
 \end{figure}
 
 \subsection{RTOS-Based Robot Control Architecture}
+\label{subsec:rtos-robot-control-zhuyu-dong}
 
-To improve the real-time performance and structural clarity of the onboard control software, the robot-side system was implemented using an RTOS-based architecture. The whole system contains four core tasks: the WiFi feedback task, the robot control task, the photo-reading task, and the position-estimation task. These tasks cooperate with different responsibilities so that communication, motion execution, image update, and pose estimation can proceed in parallel.
+To improve the real-time performance and structural clarity of the onboard control software, the robot-side system was implemented using an RTOS-based architecture~\cite{freertos_ref_manual}. The whole system contains four core tasks: the WiFi feedback task, the robot control task, the photo-reading task, and the position-estimation task. These tasks cooperate with different responsibilities so that communication, motion execution, image update, and pose estimation can proceed in parallel.
 
 \begin{figure}[htbp]
     \centering
@@ -250,15 +255,16 @@ To improve the real-time performance and structural clarity of the onboard contr
 \end{figure}
 The software maintains a unified global state object, denoted as \texttt{robot state}, which stores the key runtime status of the robot, including the movement mode, motor PWM, actual moving speed, latest captured image, current camera parameters, current IMU output, error logs, reference coordinate frame, and current relative pose. This state object also serves as the interface between the communication layer and the execution layer. As illustrated in Fig.~\ref{fig:robot-code-architecture}, the left side of the architecture can be regarded as the communication layer, while the right side can be regarded as the sensing and execution layer. The communication layer does not directly read or write hardware. Instead, it only reads and modifies the shared \texttt{robot state} object according to the received packets. Conversely, the execution layer does not directly communicate with the communication layer. It continuously updates \texttt{robot state} from hardware observations and maps the relevant state attributes to hardware actions. In this way, the two parts are decoupled through the shared state object rather than directly invoking each other, which helps avoid blocking and makes the program structure clearer.
 
-Among the four tasks, the WiFi feedback task has the highest priority. It is responsible only for communication, as well as reading and modifying the shared state object, but it does not directly perform time-consuming operations such as IMU reading, image acquisition, or pose computation. This task remains suspended during idle periods and is awakened only when a communication packet is received. The robot control task has the second-highest priority and is also suspended most of the time. It is awakened after the WiFi feedback task updates motion-related parameters, and then updates the robot motion according to the movement mode and PWM stored in the shared state.
+Among the four tasks, the WiFi feedback task has the highest priority. It is responsible only for communication, as well as reading and modifying the shared state object, but it does not directly perform time-consuming operations such as IMU reading, image acquisition, or pose computation. This task remains suspended during idle periods and is awakened only when a communication packet is received. The robot control task has the second-highest priority and is also suspended most of the time. It is awakened after the WiFi feedback task updates motion-related parameters, and then updates the robot motion according to the movement mode and PWM stored in the shared state~\cite{freertos_ref_manual}.
 
 The photo-reading task and the position-estimation task have the same lower priority and run periodically in the background. The photo-reading task polls the camera at a fixed interval and continuously refreshes the latest image buffer. The position-estimation task reads the IMU periodically and updates the relative pose. By running these two tasks continuously in the background, the system avoids blocking caused by temporary hardware access when a command arrives.
 
-To guarantee consistency in multi-task access to shared data, all shared states are protected by a mutex. In addition, any shared result must be written back to the state object only after the complete computation is finished, rather than through staged partial updates. This ensures that the WiFi feedback task always reads complete and internally consistent data when responding to external requests.
+To guarantee consistency in multi-task access to shared data, all shared states are protected by a mutex. In addition, any shared result must be written back to the state object only after the complete computation is finished, rather than through staged partial updates. This ensures that the WiFi feedback task always reads complete and internally consistent data when responding to external requests~\cite{freertos_ref_manual}.
 
 \subsection{2D Map Generation and Cost Modeling}
+\label{subsec:2dmap-generation-cost-modeling-zhuyu-dong}
 
-To convert the fused 3D point cloud into a representation suitable for path planning, the environment is discretized into regular 2D grid cells. Each cell can only be assigned one of three states: \texttt{block}, \texttt{costing}, or \texttt{unknown}. Here, \texttt{block} means that the region is not traversable, \texttt{costing} means that the region is traversable but associated with a traversal cost, and \texttt{unknown} means that the region has not yet been scanned or has not been reliably observed. The robot is allowed to move only through cells labeled as \texttt{costing}. For \texttt{costing} cells, the traversal cost ranges from 0 to 255, where a larger value indicates worse road condition and greater traversal difficulty. If the final cost of a cell is greater than or equal to 255, the cell is also treated as \texttt{block}.
+To convert the fused 3D point cloud into a representation suitable for path planning, the environment is discretized into regular 2D grid cells~\cite{elfes1989occupancy,gu2008traversability}. Each cell can only be assigned one of three states: \texttt{block}, \texttt{costing}, or \texttt{unknown}. Here, \texttt{block} means that the region is not traversable, \texttt{costing} means that the region is traversable but associated with a traversal cost, and \texttt{unknown} means that the region has not yet been scanned or has not been reliably observed. The robot is allowed to move only through cells labeled as \texttt{costing}. For \texttt{costing} cells, the traversal cost ranges from 0 to 255, where a larger value indicates worse road condition and greater traversal difficulty. If the final cost of a cell is greater than or equal to 255, the cell is also treated as \texttt{block}.
 
 Each grid cell is defined as \(5\text{ cm} \times 5\text{ cm}\). This resolution is selected according to the robot size and a safety margin. The robot body is approximately \(10 \times 10 \times 11\text{ cm}\), and the diameter of its self-rotation coverage is about
 \[
@@ -266,16 +272,16 @@ Each grid cell is defined as \(5\text{ cm} \times 5\text{ cm}\). This resolution
 \]
 To reserve additional redundancy, the robot is approximated as a \(15 \times 15 \times 15\text{ cm}\) cube. Under this setting, the \(5\text{ cm} \times 5\text{ cm}\) grid provides a convenient resolution for local traversability evaluation. If the neighboring cells covered by the projected robot footprint are all labeled as \texttt{costing}, the region can be considered traversable.
 
-\paragraph{Costing computation.}
-The 2D map is generated by first performing ground-layer selection on the point cloud. After the ground layer is determined for each cell, the system checks whether an obstacle exists within a height threshold \(H_{th}\) above the ground layer. If such an obstacle is detected, the cell is directly labeled as \texttt{block}. In this work, the height threshold is set to
+\subsubsection{Costing computation.}
+The 2D map is generated by first performing ground-layer selection on the point cloud~\cite{meng2018terrain}. After the ground layer is determined for each cell, the system checks whether an obstacle exists within a height threshold \(H_{th}\) above the ground layer. If such an obstacle is detected, the cell is directly labeled as \texttt{block}. In this work, the height threshold is set to
 \[
 H_{th}=15\text{ cm},
 \]
 which is slightly larger than the robot height of about \(11\text{ cm}\) in order to provide a safety margin.
 
-If no obstacle is found within the threshold, the cell enters the \texttt{costing} stage. The traversal cost is computed from both slope and local complexity. The slope is estimated from the local eigenvector. Since the robot can reliably climb slopes up to about \(30^\circ\), the interval from \(0^\circ\) to \(30^\circ\) is linearly mapped to a cost range of 0 to 255. If the slope exceeds \(30^\circ\), the corresponding cell is directly labeled as \texttt{block}.
+If no obstacle is found within the threshold, the cell enters the \texttt{costing} stage. The traversal cost is computed from both slope and local complexity~\cite{gu2008traversability,meng2018terrain}. The slope is estimated from the local eigenvector~\cite{weinmann2013feature}. Since the robot can reliably climb slopes up to about \(30^\circ\), the interval from \(0^\circ\) to \(30^\circ\) is linearly mapped to a cost range of 0 to 255. If the slope exceeds \(30^\circ\), the corresponding cell is directly labeled as \texttt{block}.
 
-In addition, the local complexity is computed from the normalized eigenvalue-based roughness measure. A larger normalized value indicates a more irregular surface. When the three eigenvalues are equal, the local point set can be regarded as being uniformly distributed in a \(5\text{ cm} \times 5\text{ cm} \times 5\text{ cm}\) volume, which corresponds to the maximum complexity. Its normalized value is approximately
+In addition, the local complexity is computed from the normalized eigenvalue-based roughness measure~\cite{weinmann2013feature}. A larger normalized value indicates a more irregular surface. When the three eigenvalues are equal, the local point set can be regarded as being uniformly distributed in a \(5\text{ cm} \times 5\text{ cm} \times 5\text{ cm}\) volume, which corresponds to the maximum complexity. Its normalized value is approximately
 \[
 \sqrt{\frac{1}{3}} \approx 0.6.
 \]
@@ -291,7 +297,7 @@ cost(c)=255\left(\frac{c}{0.18}\right)^2,
 \]
 where \(c\) is the local complexity value.
 
-\paragraph{Environment types and state conversion.}
+\subsubsection{Environment types and state conversion.}
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{0.64\columnwidth}
@@ -328,13 +334,13 @@ where \(c\) is the local complexity value.
 \end{figure}
 Four typical environment types are considered in this work: walls or steps, suspended obstacles, planar or sloped regions, and pits or cliff-like regions.
 
-Walls, steps, and suspended obstacles are handled in a similar manner. After ground-layer selection, these structures usually appear as elevated obstacles within a limited height range above the detected ground layer. Therefore, once such an obstacle is found within \(H_{th}\), the corresponding cell is directly classified as \texttt{block}. Planar regions and slopes are mainly represented through slope and complexity, and are therefore converted into different \texttt{costing} values. Small local obstacles are also reflected by increased local complexity, which raises the traversal cost of the corresponding cells.
+Walls, steps, and suspended obstacles are handled in a similar manner. After ground-layer selection, these structures usually appear as elevated obstacles within a limited height range above the detected ground layer. Therefore, once such an obstacle is found within \(H_{th}\), the corresponding cell is directly classified as \texttt{block}. Planar regions and slopes are mainly represented through slope and complexity, and are therefore converted into different \texttt{costing} values. Small local obstacles are also reflected by increased local complexity, which raises the traversal cost of the corresponding cells~\cite{gu2008traversability,meng2018terrain}.
 
 Pits and cliffs exhibit a different behavior. Due to viewpoint limitations, these regions are often difficult to observe completely during early scanning stages, and their edges or walls may not be reconstructed reliably. As a result, such regions are usually labeled as \texttt{unknown} first, which prevents the robot from entering potentially dangerous areas. After more observations are collected, these regions may later be reclassified as \texttt{costing} or \texttt{block}. Typical examples of these environment types are shown in Fig.~\ref{fig:2dmap-obstacles}.
 
 
 
-\paragraph{Map overwrite and merging.}
+\subsubsection{Map overwrite and merging.}
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{0.42\columnwidth}
@@ -374,6 +380,38 @@ In the global map construction process, each grid cell is associated with its co
 
 
 
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\section{Contribution}
+
+\subsection{Roles of Team Members in the Project}
+
+Zhuyu Dong:
+\begin{itemize}
+    \item Development of an initial monocular scanning robot prototype prior to the formal commencement of the project, together with preliminary demonstrations of the major technical components, to validate the feasibility of the overall system.
+    \item Contribution to the determination of the project’s preliminary technical route and the division of responsibilities among team members.
+    \item Design and fabrication of two generations of robot platforms.
+    \item Development of the onboard robot control software and the remote communication interface.
+    \item Refactoring, improvement, and finalization of the point-cloud-to-2D-map module to ensure its successful integration into the overall system.
+\end{itemize}
+
+
+\subsection{Sections Written by Each Team Member}
+
+Zhuyu Dong:
+\begin{itemize}
+    \item \nameref{subsec:relative-pose-estimation-zhuyu-dong} (Section~\ref{subsec:relative-pose-estimation-zhuyu-dong})
+    \item \nameref{subsec:2dmap-theory-zhuyu-dong} (Section~\ref{subsec:2dmap-theory-zhuyu-dong})
+    \item \nameref{subsec:swarm-centralized-architecture-zhuyu-dong} (Section~\ref{subsec:swarm-centralized-architecture-zhuyu-dong})
+    \item \nameref{subsec:robot-platform-zhuyu-dong} (Section~\ref{subsec:robot-platform-zhuyu-dong})
+    \item \nameref{subsec:rtos-robot-control-zhuyu-dong} (Section~\ref{subsec:rtos-robot-control-zhuyu-dong})
+    \item \nameref{subsec:2dmap-generation-cost-modeling-zhuyu-dong} (Section~\ref{subsec:2dmap-generation-cost-modeling-zhuyu-dong})
+    \item \nameref{subsec:first-generation-robot-zhuyu-dong} (Section~\ref{subsec:first-generation-robot-zhuyu-dong})
+    \item \nameref{subsec:second-generation-robot-zhuyu-dong} (Section~\ref{subsec:second-generation-robot-zhuyu-dong})
+    \item \nameref{subsec:bom-cost-estimate-zhuyu-dong} (Section~\ref{subsec:bom-cost-estimate-zhuyu-dong})
+    \item \nameref{subsec:comparison-two-generations-zhuyu-dong} (Section~\ref{subsec:comparison-two-generations-zhuyu-dong})
+\end{itemize}
 
 
 
@@ -381,13 +419,13 @@ In the global map construction process, each grid cell is associated with its co
 
 
 \appendices
-
 \section{Hardware Iteration of the Robot Platform}
 \label{app:hardware-iteration}
 
 To satisfy the requirements of low cost, small size, and extensibility in the swarm monocular SLAM system, two generations of robot platforms were developed in this work. Overall, the hardware design followed two main principles: minimizing the number of sensors as much as possible, and maximizing system integration to reduce both cost and implementation complexity. On the software side, the design aimed to keep different modules decoupled from one another, as well as to decouple the robots from the host computer, so as to improve flexibility and maintainability. The robot platform was required to support image capture, wireless communication, rotation and translation, and coarse pose estimation.
 
 \subsection{First-Generation Robot}
+\label{subsec:first-generation-robot-zhuyu-dong}
 
 The first-generation robot shared the same overall goal as the final robot platform, but adopted a more function-heavy mechanical structure. It used four \texttt{ULN2003} drivers to control four \texttt{28BYJ-48} stepper motors, together with a \texttt{TCA9555} expansion chip to provide sufficient control pins. In addition, two \texttt{MG90} servos were used to control the pitch and yaw of the camera, and multiple LEDs were added for auxiliary lighting.
 
@@ -420,14 +458,15 @@ In the motion design, the first-generation robot adopted a ``stepper motor + acc
 \end{figure}
 
 \subsection{Second-Generation Robot}
+\label{subsec:second-generation-robot-zhuyu-dong}
 
 To address the limitations of the first-generation platform in size, power consumption, stability, and pose estimation accuracy, a second-generation robot was developed. The size of the second-generation robot was significantly reduced to approximately \(10 \times 10 \times 10\text{ cm}\), which better satisfied the project requirements for miniaturization and low cost.
 
-The second-generation robot adopted \texttt{ESP32-CAM} as the main controller. This chip provides relatively strong performance in a compact form factor, while also integrating Wi-Fi communication and a camera interface, which makes it well suited for this project. Although the number of available pins is limited, the hardware requirements of the system can still be satisfied by reusing several special-purpose pins. In the camera module, \texttt{OV3660} was selected because it supports a resolution of \(1024 \times 768\), which is close to the effective input scale of Depth Pro and therefore helps reduce unnecessary stretching loss or compression loss. Its field of view is about \(45^\circ\), and lens distortion is small, which allows a relatively large scanning range without introducing strong geometric distortion. In addition, image capture is performed using the \texttt{OV3660} together with LED illumination.
+The second-generation robot adopted \texttt{ESP32-CAM} as the main controller. This chip provides relatively strong performance in a compact form factor, while also integrating Wi-Fi communication and a camera interface, which makes it well suited for this project~\cite{espressif_esp32_hwref}. Although the number of available pins is limited, the hardware requirements of the system can still be satisfied by reusing several special-purpose pins. In the camera module, \texttt{OV3660} was selected because it supports a resolution of \(1024 \times 768\), which is close to the effective input scale of Depth Pro and therefore helps reduce unnecessary stretching loss or compression loss. Its field of view is about \(45^\circ\), and lens distortion is small, which allows a relatively large scanning range without introducing strong geometric distortion. In addition, image capture is performed using the \texttt{OV3660} together with LED illumination.
 
-For motion, the second-generation robot uses an \texttt{L298N} motor driver together with \texttt{N15} DC geared motors, two rubber drive wheels, and a rear omni-wheel for support and rotation assistance. Compared with the stepper-motor-based first-generation design, this arrangement provides better speed, stability, and resistance to slipping. The robot realizes forward motion, backward motion, and in-place left or right rotation through motor forward and reverse control.
+For motion, the second-generation robot uses an \texttt{L298N} motor driver together with \texttt{N15} DC geared motors, two rubber drive wheels, and a rear omni-wheel for support and rotation assistance~\cite{st_l298}. Compared with the stepper-motor-based first-generation design, this arrangement provides better speed, stability, and resistance to slipping. The robot realizes forward motion, backward motion, and in-place left or right rotation through motor forward and reverse control.
 
-For pose feedback, the second-generation robot uses an \texttt{MPU6050} IMU. This sensor includes a DMP chip, which reduces the computational burden of additional integration on the main controller, and it is also widely used and well documented. The final pose estimation strategy of the second-generation platform combines timed DC motor control with IMU-based rotation feedback. In practice, this design performed significantly better than the first-generation one, achieving a rotation error of about \(\pm 3^\circ\) per \(180^\circ\) turn, and a forward/backward error of about \(\pm 5\text{ mm}\) per \(10\text{ cm}\) of travel.
+For pose feedback, the second-generation robot uses an \texttt{MPU6050} IMU~\cite{invensense_mpu6050}. This sensor includes a DMP chip, which reduces the computational burden of additional integration on the main controller, and it is also widely used and well documented. The final pose estimation strategy of the second-generation platform combines timed DC motor control with IMU-based rotation feedback. In practice, this design performed significantly better than the first-generation one, achieving a rotation error of about \(\pm 3^\circ\) per \(180^\circ\) turn, and a forward/backward error of about \(\pm 5\text{ mm}\) per \(10\text{ cm}\) of travel.
 
 Several functions of the first-generation robot were intentionally removed in the second-generation design. Lateral translation was removed because it was rarely needed in practice and could be replaced by in-place rotation followed by forward or backward motion. The camera pitch and yaw servos were also removed, since yaw could be replaced by robot self-rotation, while pitch-view depth conversion introduced a large error of about \(\pm 20\text{ cm}\) per \(1\text{ m}\) distance. In addition, the number of LEDs was reduced because experiments showed that the effect of four dedicated fill lights was almost the same as that of one additional LED together with the built-in LED of the \texttt{ESP32-CAM}. These changes significantly reduced the overall size and structural complexity of the robot.
 
@@ -465,6 +504,7 @@ Several functions of the first-generation robot were intentionally removed in th
 \end{figure}
 
 \subsection{Bill of Materials and Cost Estimate}
+\label{subsec:bom-cost-estimate-zhuyu-dong}
 
 To further demonstrate the low-cost characteristic of the second-generation robot, Table~\ref{tab:robot-bom} summarizes the main bill of materials (BOM) entries based on the exported component list. The quoted prices are taken from the JLC/LCSC marketplace~\cite{lcsc_marketplace}, and all prices are given in RMB. After including the 7.4V lithium battery, the subtotal of the priced entries is RMB 93.54, which is approximately GBP 10 depending on the exchange rate.
 
@@ -493,10 +533,9 @@ Total & -- & 93.54 \\
 \end{table}
 
 \subsection{Comparison Between the Two Generations}
+\label{subsec:comparison-two-generations-zhuyu-dong}
 
 Overall, both robot generations were designed for low-cost monocular SLAM scanning, but they represent two different engineering trade-offs. The first-generation robot emphasized function completeness, including lateral translation, camera pan-tilt control, and more auxiliary lighting, but this resulted in a larger size, higher mechanical complexity, and poorer motion stability. The second-generation robot instead focused on preserving only the core functions required by the project, namely image capture, wireless communication, motion execution, and coarse pose estimation. Through this simplification, the second-generation design achieved better compactness, lower complexity, and improved motion accuracy. Therefore, the second-generation robot was finally selected as the hardware platform used in this work.
 
-\bibliographystyle{alpha}
-\bibliography{sample}
 
 \end{document}
