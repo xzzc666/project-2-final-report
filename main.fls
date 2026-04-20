@@ -390,6 +390,8 @@ INPUT .\figures\car\V2_sch.png
 INPUT .\figures\car\V2_sch.png
 INPUT .\figures\car\V2_sch.png
 INPUT .\figures\car\V2_sch.png
+INPUT C:\Users\dongz\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\dongz\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.29)  20 APR 2026 05:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.29)  20 APR 2026 06:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,12 +454,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 
-<figures/smallev.png, id=136, 580.41844pt x 235.63031pt>
+<figures/smallev.png, id=144, 580.41844pt x 235.63031pt>
 File: figures/smallev.png Graphic file (type png)
 <use figures/smallev.png>
 Package pdftex.def Info: figures/smallev.png  used on input line 169.
 (pdftex.def)             Requested size: 118.4403pt x 48.0816pt.
-<figures/bigev.png, id=138, 473.51906pt x 223.58531pt>
+<figures/bigev.png, id=146, 473.51906pt x 223.58531pt>
 File: figures/bigev.png Graphic file (type png)
 <use figures/bigev.png>
 Package pdftex.def Info: figures/bigev.png  used on input line 176.
@@ -467,12 +467,12 @@ Package pdftex.def Info: figures/bigev.png  used on input line 176.
 
 
 [2 <./figures/smallev.png> <./figures/bigev.png>]
-<figures/centralized_slam_architecture.drawio.png, id=152, 1165.35374pt x 563.10374pt>
+<figures/centralized_slam_architecture.drawio.png, id=160, 1165.35374pt x 563.10374pt>
 File: figures/centralized_slam_architecture.drawio.png Graphic file (type png)
 <use figures/centralized_slam_architecture.drawio.png>
 Package pdftex.def Info: figures/centralized_slam_architecture.drawio.png  used on input line 196.
 (pdftex.def)             Requested size: 206.64185pt x 99.85065pt.
-<figures/overview flow chat.png, id=154, 1841.37938pt x 703.87968pt>
+<figures/overview flow chat.png, id=162, 1841.37938pt x 703.87968pt>
 File: figures/overview flow chat.png Graphic file (type png)
 <use figures/overview flow chat.png>
 Package pdftex.def Info: figures/overview flow chat.png  used on input line 205.
@@ -483,17 +483,17 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 21
 (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<figures/car/front.jpg, id=161, 511.15968pt x 540.51938pt>
+<figures/car/front.jpg, id=169, 511.15968pt x 540.51938pt>
 File: figures/car/front.jpg Graphic file (type jpg)
 <use figures/car/front.jpg>
 Package pdftex.def Info: figures/car/front.jpg  used on input line 223.
 (pdftex.def)             Requested size: 80.64185pt x 85.27246pt.
-<figures/car/side.jpg, id=162, 585.68813pt x 636.12656pt>
+<figures/car/side.jpg, id=170, 585.68813pt x 636.12656pt>
 File: figures/car/side.jpg Graphic file (type jpg)
 <use figures/car/side.jpg>
 Package pdftex.def Info: figures/car/side.jpg  used on input line 230.
 (pdftex.def)             Requested size: 80.64185pt x 87.58171pt.
-<figures/car/up.jpg, id=163, 639.13782pt x 648.92438pt>
+<figures/car/up.jpg, id=171, 639.13782pt x 648.92438pt>
 File: figures/car/up.jpg Graphic file (type jpg)
 <use figures/car/up.jpg>
 Package pdftex.def Info: figures/car/up.jpg  used on input line 237.
@@ -501,7 +501,7 @@ Package pdftex.def Info: figures/car/up.jpg  used on input line 237.
 
 
 [3 <./figures/centralized_slam_architecture.drawio.png> <./figures/overview flow chat.png> <./figures/car/front.jpg> <./figures/car/side.jpg> <./figures/car/up.jpg>]
-<figures/robot_code_architecture.drawio.png, id=182, 1084.80281pt x 572.89032pt>
+<figures/robot_code_architecture.drawio.png, id=190, 1084.80281pt x 572.89032pt>
 File: figures/robot_code_architecture.drawio.png Graphic file (type png)
 <use figures/robot_code_architecture.drawio.png>
 Package pdftex.def Info: figures/robot_code_architecture.drawio.png  used on input line 252.
@@ -521,44 +521,44 @@ Underfull \hbox (badness 1688) in paragraph at lines 276--277
 
 
 [4 <./figures/robot_code_architecture.drawio.png>]
-<figures/2Dmap/WALL.png, id=199, 554.07pt x 377.15906pt>
+<figures/2Dmap/WALL.png, id=207, 554.07pt x 377.15906pt>
 File: figures/2Dmap/WALL.png Graphic file (type png)
 <use figures/2Dmap/WALL.png>
 Package pdftex.def Info: figures/2Dmap/WALL.png  used on input line 305.
 (pdftex.def)             Requested size: 161.27985pt x 109.78192pt.
-<figures/2Dmap/Suspended BLOCK.png, id=200, 322.20375pt x 449.42906pt>
+<figures/2Dmap/Suspended BLOCK.png, id=208, 322.20375pt x 449.42906pt>
 File: figures/2Dmap/Suspended BLOCK.png Graphic file (type png)
 <use figures/2Dmap/Suspended BLOCK.png>
 Package pdftex.def Info: figures/2Dmap/Suspended BLOCK.png  used on input line 312.
 (pdftex.def)             Requested size: 79.38062pt x 110.72484pt.
-<figures/2Dmap/SLOPE.png, id=201, 324.46219pt x 194.97844pt>
+<figures/2Dmap/SLOPE.png, id=209, 324.46219pt x 194.97844pt>
 File: figures/2Dmap/SLOPE.png Graphic file (type png)
 <use figures/2Dmap/SLOPE.png>
 Package pdftex.def Info: figures/2Dmap/SLOPE.png  used on input line 321.
 (pdftex.def)             Requested size: 118.4403pt x 71.17397pt.
-<figures/2Dmap/PIT.png, id=202, 517.935pt x 305.64188pt>
+<figures/2Dmap/PIT.png, id=210, 517.935pt x 305.64188pt>
 File: figures/2Dmap/PIT.png Graphic file (type png)
 <use figures/2Dmap/PIT.png>
 Package pdftex.def Info: figures/2Dmap/PIT.png  used on input line 328.
 (pdftex.def)             Requested size: 118.4403pt x 69.8904pt.
 
 
-<figures/merge2dmap/2/map_costmap_view.jpg, id=206, 618.81187pt x 665.48625pt>
+<figures/merge2dmap/2/map_costmap_view.jpg, id=214, 618.81187pt x 665.48625pt>
 File: figures/merge2dmap/2/map_costmap_view.jpg Graphic file (type jpg)
 <use figures/merge2dmap/2/map_costmap_view.jpg>
 Package pdftex.def Info: figures/merge2dmap/2/map_costmap_view.jpg  used on input line 348.
 (pdftex.def)             Requested size: 105.83954pt x 113.82167pt.
-<figures/merge2dmap/3/map_costmap_view.jpg, id=207, 811.53188pt x 761.84625pt>
+<figures/merge2dmap/3/map_costmap_view.jpg, id=215, 811.53188pt x 761.84625pt>
 File: figures/merge2dmap/3/map_costmap_view.jpg Graphic file (type jpg)
 <use figures/merge2dmap/3/map_costmap_view.jpg>
 Package pdftex.def Info: figures/merge2dmap/3/map_costmap_view.jpg  used on input line 355.
 (pdftex.def)             Requested size: 110.88062pt x 104.08865pt.
-<figures/merge2dmap/4/map_costmap_view.jpg, id=208, 931.98187pt x 761.84625pt>
+<figures/merge2dmap/4/map_costmap_view.jpg, id=216, 931.98187pt x 761.84625pt>
 File: figures/merge2dmap/4/map_costmap_view.jpg Graphic file (type jpg)
 <use figures/merge2dmap/4/map_costmap_view.jpg>
 Package pdftex.def Info: figures/merge2dmap/4/map_costmap_view.jpg  used on input line 364.
 (pdftex.def)             Requested size: 115.92169pt x 94.75392pt.
-<figures/merge2dmap/5/map_costmap_view.jpg, id=209, 931.98187pt x 761.84625pt>
+<figures/merge2dmap/5/map_costmap_view.jpg, id=217, 931.98187pt x 761.84625pt>
 File: figures/merge2dmap/5/map_costmap_view.jpg Graphic file (type jpg)
 <use figures/merge2dmap/5/map_costmap_view.jpg>
 Package pdftex.def Info: figures/merge2dmap/5/map_costmap_view.jpg  used on input line 371.
@@ -567,7 +567,7 @@ Package pdftex.def Info: figures/merge2dmap/5/map_costmap_view.jpg  used on inpu
 
 [5 <./figures/2Dmap/WALL.png> <./figures/2Dmap/Suspended BLOCK.png> <./figures/2Dmap/SLOPE.png> <./figures/2Dmap/PIT.png> <./figures/merge2dmap/2/map_costmap_view.jpg> <./figures/merge2dmap/3/map_costmap_view.jpg> <./figures/merge2dmap/4/map_costmap_view.jpg> <./figures/merge2dmap/5/map_costmap_view.jpg>])
 
-<figures/car/v1.jpg, id=239, 1284.8pt x 1374.13374pt>
+<figures/car/v1.jpg, id=247, 1284.8pt x 1374.13374pt>
 File: figures/car/v1.jpg Graphic file (type jpg)
 <use figures/car/v1.jpg>
 Package pdftex.def Info: figures/car/v1.jpg  used on input line 436.
@@ -575,12 +575,12 @@ Package pdftex.def Info: figures/car/v1.jpg  used on input line 436.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/car/v1Body_sch.png, id=240, 1173.38374pt x 830.10126pt>
+<figures/car/v1Body_sch.png, id=248, 1173.38374pt x 830.10126pt>
 File: figures/car/v1Body_sch.png Graphic file (type png)
 <use figures/car/v1Body_sch.png>
 Package pdftex.def Info: figures/car/v1Body_sch.png  used on input line 445.
 (pdftex.def)             Requested size: 120.95892pt x 85.56091pt.
-<figures/car/v1Head_sch.png, id=241, 1173.38374pt x 830.10126pt>
+<figures/car/v1Head_sch.png, id=249, 1173.38374pt x 830.10126pt>
 File: figures/car/v1Head_sch.png Graphic file (type png)
 <use figures/car/v1Head_sch.png>
 Package pdftex.def Info: figures/car/v1Head_sch.png  used on input line 452.
@@ -604,7 +604,7 @@ File: figures/car/up.jpg Graphic file (type jpg)
 <use figures/car/up.jpg>
 Package pdftex.def Info: figures/car/up.jpg  used on input line 491.
 (pdftex.def)             Requested size: 80.64185pt x 81.86787pt.
-<figures/car/V2_sch.png, id=253, 1173.38374pt x 830.10126pt>
+<figures/car/V2_sch.png, id=261, 1173.38374pt x 830.10126pt>
 File: figures/car/V2_sch.png Graphic file (type png)
 <use figures/car/V2_sch.png>
 Package pdftex.def Info: figures/car/V2_sch.png  used on input line 501.
@@ -626,20 +626,20 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1D2EA74BCAFCEA2E65F04144FF971978;5778.
+(rerunfilecheck)             Checksum: FF2036D6C359A5EF0D470BAEBFF273CC;6212.
  ) 
 Here is how much of TeX's memory you used:
- 14252 strings out of 468080
- 229823 string characters out of 5425771
+ 14258 strings out of 468080
+ 229943 string characters out of 5425771
  654467 words of memory out of 5000000
- 42704 multiletter control sequences out of 15000+600000
- 665694 words of font info for 113 fonts, out of 8000000 for 9000
+ 42707 multiletter control sequences out of 15000+600000
+ 666801 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,1296b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 4437153 bytes).
+Output written on main.pdf (8 pages, 4443183 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 
