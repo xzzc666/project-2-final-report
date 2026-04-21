@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram id="pipeline-timecost" name="Pipeline Time Cost">
+    <mxGraphModel dx="1659" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Pipeline Scheduling Based on Mean Time Cost per Frame" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="100" width="920" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1" value="Robot 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="40" y="190" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" value="Robot 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="40" y="340" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" value="Robot 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="40" y="490" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="grid1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#dddddd;" parent="1" vertex="1">
+          <mxGeometry x="250" y="190" width="990" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="grid2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#dddddd;" parent="1" vertex="1">
+          <mxGeometry x="250" y="340" width="990" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="grid3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#dddddd;" parent="1" vertex="1">
+          <mxGeometry x="250" y="490" width="990" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="f1s1" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Merge&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6fa8dc;strokeColor=#3d85c6;fontColor=#ffffff;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="280" y="215" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f1s2" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Depth&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd966;strokeColor=#d6b656;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="611" y="215" width="112" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f1s3" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Map + Pathplan + Control&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c47d;strokeColor=#6aa84f;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="932" y="215" width="278" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="610" as="sourcePoint" />
+            <mxPoint x="580" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="610" as="sourcePoint" />
+            <mxPoint x="920" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-5" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Merge&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6fa8dc;strokeColor=#3d85c6;fontColor=#ffffff;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="611" y="365" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-6" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Depth&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd966;strokeColor=#d6b656;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="932" y="365" width="112" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-7" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Map + Pathplan + Control&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c47d;strokeColor=#6aa84f;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="280" y="365" width="278" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-8" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Merge&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6fa8dc;strokeColor=#3d85c6;fontColor=#ffffff;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="932" y="515" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-9" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Depth&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffd966;strokeColor=#d6b656;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="280" y="515" width="112" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DNrl58lJ6YW-jC5xsI62-10" value="&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;font-size: 17px; color: rgb(0, 0, 0);&quot;&gt;Map + Pathplan + Control&amp;nbsp;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#93c47d;strokeColor=#6aa84f;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="611" y="515" width="278" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
