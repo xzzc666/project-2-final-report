@@ -1,335 +1,340 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.29)  20 APR 2026 06:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.15)  29 APR 2026 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/MyCode/latex/project2/main.tex
-(d:/MyCode/latex/project2/main.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-10-09>
-(C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
-Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
--- See the "IEEEtran_HOWTO" manual for usage information.
--- http://www.michaelshell.org/tex/ieeetran/
-\@IEEEtrantmpdimenA=\dimen148
-\@IEEEtrantmpdimenB=\dimen149
-\@IEEEtrantmpdimenC=\dimen150
-\@IEEEtrantmpcountA=\count275
-\@IEEEtrantmpcountB=\count276
-\@IEEEtrantmpcountC=\count277
-\@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
-(C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+**"/Users/dongzhuyu/latex/final_report——Zhuyu Dong/main.tex"
+(/Users/dongzhuyu/latex/final_report——Zhuyu Dong/main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(./interim_report.cls
+Document Class: interim_report 2021/12/02 (oh209)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
--- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
-\@IEEEnormalsizeunitybaselineskip=\dimen151
--- This is a 10 point document.
-LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) on input line 937.
-\CLASSINFOnormalsizebaselineskip=\dimen152
-\CLASSINFOnormalsizeunitybaselineskip=\dimen153
-\IEEEnormaljot=\dimen154
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-\IEEEquantizedlength=\dimen155
-\IEEEquantizedlengthdiff=\dimen156
-\IEEEquantizedtextheightdiff=\dimen157
-\IEEEilabelindentA=\dimen158
-\IEEEilabelindentB=\dimen159
-\IEEEilabelindent=\dimen160
-\IEEEelabelindent=\dimen161
-\IEEEdlabelindent=\dimen162
-\IEEElabelindent=\dimen163
-\IEEEiednormlabelsep=\dimen164
-\IEEEiedmathlabelsep=\dimen165
-\IEEEiedtopsep=\skip49
-\c@section=\count278
-\c@subsection=\count279
-\c@subsubsection=\count280
-\c@paragraph=\count281
-\c@IEEEsubequation=\count282
-\abovecaptionskip=\skip50
-\belowcaptionskip=\skip51
-\c@figure=\count283
-\c@table=\count284
-\@IEEEeqnnumcols=\count285
-\@IEEEeqncolcnt=\count286
-\@IEEEsubeqnnumrollback=\count287
-\@IEEEquantizeheightA=\dimen166
-\@IEEEquantizeheightB=\dimen167
-\@IEEEquantizeheightC=\dimen168
-\@IEEEquantizeprevdepth=\dimen169
-\@IEEEquantizemultiple=\count288
-\@IEEEquantizeboxA=\box53
-\@IEEEtmpitemindent=\dimen170
-\IEEEPARstartletwidth=\dimen171
-\c@IEEEbiography=\count289
-\@IEEEtranrubishbin=\box54
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+\KV@toks@=\toks17
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gin@req@height=\dimen172
-\Gin@req@width=\dimen173
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2025/06/16 v2.17y AMS math features
-\@mathmargin=\skip52
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
-\ex@=\dimen174
-)) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+\ex@=\dimen157
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen175
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen158
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count290
+\inf@bad=\count286
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count291
-\leftroot@=\count292
+\uproot@=\count287
+\leftroot@=\count288
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count293
-\DOTSCASE@=\count294
+\classnum@=\count289
+\DOTSCASE@=\count290
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box55
-\strutbox@=\box56
+\Mathstrutbox@=\box53
+\strutbox@=\box54
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen176
+\big@size=\dimen159
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count295
+\macc@depth=\count291
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count296
+\c@MaxMatrixCols=\count292
 \dotsspace@=\muskip17
-\c@parentequation=\count297
-\dspbrk@lvl=\count298
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
 \tag@help=\toks20
-\row@=\count299
-\column@=\count300
-\maxfields@=\count301
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
 \andhelp@=\toks21
-\eqnshift@=\dimen177
-\alignsep@=\dimen178
-\tagshift@=\dimen179
-\tagwidth@=\dimen180
-\totwidth@=\dimen181
-\lineht@=\dimen182
+\eqnshift@=\dimen160
+\alignsep@=\dimen161
+\tagshift@=\dimen162
+\tagwidth@=\dimen163
+\totwidth@=\dimen164
+\lineht@=\dimen165
 \@envbody=\toks22
-\multlinegap=\skip53
-\multlinetaggap=\skip54
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2949.
-LaTeX Info: Redefining \] on input line 2950.
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks29
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip57
+\thanksmargin=\skip58
+\droptitle=\skip59
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen166
+\ttl@minus=\dimen167
+\ttl@toksa=\toks30
+\titlewidth=\dimen168
+\titlewidthlast=\dimen169
+\titlewidthfirst=\dimen170
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen171
+\captionmargin=\dimen172
+\caption@leftmargin=\dimen173
+\caption@rightmargin=\dimen174
+\caption@width=\dimen175
+\caption@indent=\dimen176
+\caption@parindent=\dimen177
+\caption@hangindent=\dimen178
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count298
+\c@continuedfloat=\count299
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip62
+\f@nch@offset@elh=\skip63
+\f@nch@offset@erh=\skip64
+\f@nch@offset@olh=\skip65
+\f@nch@offset@orh=\skip66
+\f@nch@offset@elf=\skip67
+\f@nch@offset@erf=\skip68
+\f@nch@offset@olf=\skip69
+\f@nch@offset@orf=\skip70
+\f@nch@height=\skip71
+\f@nch@footalignment=\skip72
+\f@nch@widthL=\skip73
+\f@nch@widthC=\skip74
+\f@nch@widthR=\skip75
+\@temptokenb=\toks31
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen179
+\Gin@req@width=\dimen180
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count302
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+\c@section@level=\count300
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count303
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+\etb@tempcnta=\count301
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen183
-\Hy@linkcounter=\count304
-\Hy@pagecounter=\count305
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen181
+\Hy@linkcounter=\count302
+\Hy@pagecounter=\count303
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count306
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count304
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count307
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count305
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen184
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen182
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count308
-\Field@Width=\dimen185
-\Fld@charsize=\dimen186
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count309
-\c@Item=\count310
-\c@Hfootnote=\count311
+\Fld@menulength=\count306
+\Field@Width=\dimen183
+\Fld@charsize=\dimen184
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count307
+\c@Item=\count308
+\c@Hfootnote=\count309
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count312
-\c@bookmark@seq@number=\count313
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count310
+\c@bookmark@seq@number=\count311
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip55
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count314
-\lst@gtempboxa=\box57
-\lst@token=\toks24
-\lst@length=\count315
-\lst@currlwidth=\dimen187
-\lst@column=\count316
-\lst@pos=\count317
-\lst@lostspace=\dimen188
-\lst@width=\dimen189
-\lst@newlines=\count318
-\lst@lineno=\count319
-\lst@maxwidth=\dimen190
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
-File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count320
-\lst@skipnumbers=\count321
-\lst@framebox=\box58
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2024/09/23 1.10c listings configuration
+\Hy@SectionHShift=\skip76
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count312
+\lst@gtempboxa=\box56
+\lst@token=\toks32
+\lst@length=\count313
+\lst@currlwidth=\dimen185
+\lst@column=\count314
+\lst@pos=\count315
+\lst@lostspace=\dimen186
+\lst@width=\dimen187
+\lst@newlines=\count316
+\lst@lineno=\count317
+\lst@maxwidth=\dimen188
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count318
+\lst@skipnumbers=\count319
+\lst@framebox=\box57
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
-Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -339,307 +344,1073 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen189
+\lightrulewidth=\dimen190
+\cmidrulewidth=\dimen191
+\belowrulesep=\dimen192
+\belowbottomsep=\dimen193
+\aboverulesep=\dimen194
+\abovetopsep=\dimen195
+\cmidrulesep=\dimen196
+\cmidrulekern=\dimen197
+\defaultaddspace=\dimen198
+\@cmidla=\count320
+\@cmidlb=\count321
+\@aboverulesep=\dimen199
+\@belowrulesep=\dimen256
+\@thisruleclass=\count322
+\@lastruleclass=\count323
+\@thisrulewidth=\dimen257
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip56
-\multirow@cntb=\count322
-\multirow@dima=\skip57
-\bigstrutjot=\dimen191
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+\multirow@colwidth=\skip77
+\multirow@cntb=\count324
+\multirow@dima=\skip78
+\bigstrutjot=\dimen258
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen192
-\captionmargin=\dimen193
-\caption@leftmargin=\dimen194
-\caption@rightmargin=\dimen195
-\caption@width=\dimen196
-\caption@indent=\dimen197
-\caption@parindent=\dimen198
-\caption@hangindent=\dimen199
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1175.
-)
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
-\c@caption@flags=\count323
-\c@continuedfloat=\count324
-Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
-)
 Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count325
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count326
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count327
-\float@exts=\toks25
-\float@box=\box59
-\@float@everytoks=\toks26
-\@floatcapt=\box60
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+\float@exts=\toks33
+\float@box=\box58
+\@float@everytoks=\toks34
+\@floatcapt=\box59
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
-) (main.aux)
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
--- Lines per column: 58 (exact).
-(C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(78.24507pt, 675.75296pt, 91.04881pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=675.75296pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.02492pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=22.76219pt
+* \marginparwidth=95.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count329
-\scratchdimen=\dimen256
-\scratchbox=\box61
+\scratchdimen=\dimen259
+\scratchbox=\box60
 \nofMPsegments=\count330
 \nofMParguments=\count331
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count332
-\MPscratchDim=\dimen257
+\MPscratchDim=\dimen260
 \MPnumerator=\count333
 \makeMPintoPDFobject=\count334
-\everyMPtoPDFconversion=\toks28
-) (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\everyMPtoPDFconversion=\toks36
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 26.
- (main.out) (main.out)
+Package hyperref Info: Link coloring OFF on input line 33.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 \c@lstlisting=\count335
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+<darkblue_banner.png, id=381, 3388.0176pt x 399.6531pt>
+File: darkblue_banner.png Graphic file (type png)
+<use darkblue_banner.png>
+Package pdftex.def Info: darkblue_banner.png  used on input line 34.
+(pdftex.def)             Requested size: 597.50787pt x 70.47697pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
- (C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
 
 
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./darkblue_banner.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
-[1{C:/Users/dongz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+ []
 
+[2
+
+] (./main.toc
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 ... Model Selection}{21}{subsubsection.3.4.3}
+                                                  % [1
 
 ]
-
-<figures/smallev.png, id=144, 580.41844pt x 235.63031pt>
-File: figures/smallev.png Graphic file (type png)
-<use figures/smallev.png>
-Package pdftex.def Info: figures/smallev.png  used on input line 169.
-(pdftex.def)             Requested size: 118.4403pt x 48.0816pt.
-<figures/bigev.png, id=146, 473.51906pt x 223.58531pt>
-File: figures/bigev.png Graphic file (type png)
-<use figures/bigev.png>
-Package pdftex.def Info: figures/bigev.png  used on input line 176.
-(pdftex.def)             Requested size: 118.4403pt x 55.92348pt.
-
-
-[2 <./figures/smallev.png> <./figures/bigev.png>]
-<figures/centralized_slam_architecture.drawio.png, id=160, 1165.35374pt x 563.10374pt>
-File: figures/centralized_slam_architecture.drawio.png Graphic file (type png)
-<use figures/centralized_slam_architecture.drawio.png>
-Package pdftex.def Info: figures/centralized_slam_architecture.drawio.png  used on input line 196.
-(pdftex.def)             Requested size: 206.64185pt x 99.85065pt.
-<figures/overview flow chat.png, id=162, 1841.37938pt x 703.87968pt>
-File: figures/overview flow chat.png Graphic file (type png)
-<use figures/overview flow chat.png>
-Package pdftex.def Info: figures/overview flow chat.png  used on input line 205.
-(pdftex.def)             Requested size: 221.76123pt x 84.76263pt.
-
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 216.
-(C:\Users\dongz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-<figures/car/front.jpg, id=169, 511.15968pt x 540.51938pt>
-File: figures/car/front.jpg Graphic file (type jpg)
-<use figures/car/front.jpg>
-Package pdftex.def Info: figures/car/front.jpg  used on input line 223.
-(pdftex.def)             Requested size: 80.64185pt x 85.27246pt.
-<figures/car/side.jpg, id=170, 585.68813pt x 636.12656pt>
-File: figures/car/side.jpg Graphic file (type jpg)
-<use figures/car/side.jpg>
-Package pdftex.def Info: figures/car/side.jpg  used on input line 230.
-(pdftex.def)             Requested size: 80.64185pt x 87.58171pt.
-<figures/car/up.jpg, id=171, 639.13782pt x 648.92438pt>
-File: figures/car/up.jpg Graphic file (type jpg)
-<use figures/car/up.jpg>
-Package pdftex.def Info: figures/car/up.jpg  used on input line 237.
-(pdftex.def)             Requested size: 80.64185pt x 81.86787pt.
-
-
-[3 <./figures/centralized_slam_architecture.drawio.png> <./figures/overview flow chat.png> <./figures/car/front.jpg> <./figures/car/side.jpg> <./figures/car/up.jpg>]
-<figures/robot_code_architecture.drawio.png, id=190, 1084.80281pt x 572.89032pt>
-File: figures/robot_code_architecture.drawio.png Graphic file (type png)
-<use figures/robot_code_architecture.drawio.png>
-Package pdftex.def Info: figures/robot_code_architecture.drawio.png  used on input line 252.
-(pdftex.def)             Requested size: 231.83954pt x 122.43472pt.
-
-
-
-Underfull \hbox (badness 3179) in paragraph at lines 276--277
- \OT1/ptm/m/it/10 1) Cost-ing com-pu-ta-tion.: [][][] \OT1/ptm/m/n/10 The 2D map is gen-er-ated
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 276--277
-\OT1/ptm/m/n/10 by first per-form-ing ground-layer se-lec-tion on the point
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 ...n Representation}{49}{subsubsection.D.1.1}
+                                                  % [2])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
  []
 
+[3]
+<figures/weijie/4.png, id=510, 84.315pt x 84.315pt>
+File: figures/weijie/4.png Graphic file (type png)
+<use figures/weijie/4.png>
+Package pdftex.def Info: figures/weijie/4.png  used on input line 75.
+(pdftex.def)             Requested size: 145.68144pt x 145.68536pt.
+<figures/weijie/5.png, id=512, 113.7048pt x 67.9338pt>
+File: figures/weijie/5.png Graphic file (type png)
+<use figures/weijie/5.png>
+Package pdftex.def Info: figures/weijie/5.png  used on input line 81.
+(pdftex.def)             Requested size: 145.68144pt x 87.03891pt.
+<figures/weijie/6.png, id=513, 89.133pt x 89.133pt>
+File: figures/weijie/6.png Graphic file (type png)
+<use figures/weijie/6.png>
+Package pdftex.def Info: figures/weijie/6.png  used on input line 87.
+(pdftex.def)             Requested size: 145.68144pt x 145.6935pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[4{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 108.
 
 
-[4 <./figures/robot_code_architecture.drawio.png>]
-<figures/2Dmap/WALL.png, id=207, 554.07pt x 377.15906pt>
-File: figures/2Dmap/WALL.png Graphic file (type png)
-<use figures/2Dmap/WALL.png>
-Package pdftex.def Info: figures/2Dmap/WALL.png  used on input line 305.
-(pdftex.def)             Requested size: 161.27985pt x 109.78192pt.
-<figures/2Dmap/Suspended BLOCK.png, id=208, 322.20375pt x 449.42906pt>
-File: figures/2Dmap/Suspended BLOCK.png Graphic file (type png)
-<use figures/2Dmap/Suspended BLOCK.png>
-Package pdftex.def Info: figures/2Dmap/Suspended BLOCK.png  used on input line 312.
-(pdftex.def)             Requested size: 79.38062pt x 110.72484pt.
-<figures/2Dmap/SLOPE.png, id=209, 324.46219pt x 194.97844pt>
-File: figures/2Dmap/SLOPE.png Graphic file (type png)
-<use figures/2Dmap/SLOPE.png>
-Package pdftex.def Info: figures/2Dmap/SLOPE.png  used on input line 321.
-(pdftex.def)             Requested size: 118.4403pt x 71.17397pt.
-<figures/2Dmap/PIT.png, id=210, 517.935pt x 305.64188pt>
-File: figures/2Dmap/PIT.png Graphic file (type png)
-<use figures/2Dmap/PIT.png>
-Package pdftex.def Info: figures/2Dmap/PIT.png  used on input line 328.
-(pdftex.def)             Requested size: 118.4403pt x 69.8904pt.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<figures/merge2dmap/2/map_costmap_view.jpg, id=214, 618.81187pt x 665.48625pt>
-File: figures/merge2dmap/2/map_costmap_view.jpg Graphic file (type jpg)
-<use figures/merge2dmap/2/map_costmap_view.jpg>
-Package pdftex.def Info: figures/merge2dmap/2/map_costmap_view.jpg  used on input line 348.
-(pdftex.def)             Requested size: 105.83954pt x 113.82167pt.
-<figures/merge2dmap/3/map_costmap_view.jpg, id=215, 811.53188pt x 761.84625pt>
-File: figures/merge2dmap/3/map_costmap_view.jpg Graphic file (type jpg)
-<use figures/merge2dmap/3/map_costmap_view.jpg>
-Package pdftex.def Info: figures/merge2dmap/3/map_costmap_view.jpg  used on input line 355.
-(pdftex.def)             Requested size: 110.88062pt x 104.08865pt.
-<figures/merge2dmap/4/map_costmap_view.jpg, id=216, 931.98187pt x 761.84625pt>
-File: figures/merge2dmap/4/map_costmap_view.jpg Graphic file (type jpg)
-<use figures/merge2dmap/4/map_costmap_view.jpg>
-Package pdftex.def Info: figures/merge2dmap/4/map_costmap_view.jpg  used on input line 364.
-(pdftex.def)             Requested size: 115.92169pt x 94.75392pt.
-<figures/merge2dmap/5/map_costmap_view.jpg, id=217, 931.98187pt x 761.84625pt>
-File: figures/merge2dmap/5/map_costmap_view.jpg Graphic file (type jpg)
-<use figures/merge2dmap/5/map_costmap_view.jpg>
-Package pdftex.def Info: figures/merge2dmap/5/map_costmap_view.jpg  used on input line 371.
-(pdftex.def)             Requested size: 115.92169pt x 94.75392pt.
-(main.bbl
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
 
-[5 <./figures/2Dmap/WALL.png> <./figures/2Dmap/Suspended BLOCK.png> <./figures/2Dmap/SLOPE.png> <./figures/2Dmap/PIT.png> <./figures/merge2dmap/2/map_costmap_view.jpg> <./figures/merge2dmap/3/map_costmap_view.jpg> <./figures/merge2dmap/4/map_costmap_view.jpg> <./figures/merge2dmap/5/map_costmap_view.jpg>])
-
-<figures/car/v1.jpg, id=247, 1284.8pt x 1374.13374pt>
-File: figures/car/v1.jpg Graphic file (type jpg)
-<use figures/car/v1.jpg>
-Package pdftex.def Info: figures/car/v1.jpg  used on input line 436.
-(pdftex.def)             Requested size: 201.60077pt x 215.60947pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/car/v1Body_sch.png, id=248, 1173.38374pt x 830.10126pt>
-File: figures/car/v1Body_sch.png Graphic file (type png)
-<use figures/car/v1Body_sch.png>
-Package pdftex.def Info: figures/car/v1Body_sch.png  used on input line 445.
-(pdftex.def)             Requested size: 120.95892pt x 85.56091pt.
-<figures/car/v1Head_sch.png, id=249, 1173.38374pt x 830.10126pt>
-File: figures/car/v1Head_sch.png Graphic file (type png)
-<use figures/car/v1Head_sch.png>
-Package pdftex.def Info: figures/car/v1Head_sch.png  used on input line 452.
-(pdftex.def)             Requested size: 120.95892pt x 85.56091pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[5 <./figures/weijie/4.png> <./figures/weijie/5.png> <./figures/weijie/6.png>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
 
 [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[7]
+<figures/junjie/camera.png, id=553, 1022.82124pt x 541.02126pt>
+File: figures/junjie/camera.png Graphic file (type png)
+<use figures/junjie/camera.png>
+Package pdftex.def Info: figures/junjie/camera.png  used on input line 175.
+(pdftex.def)             Requested size: 327.7763pt x 173.37799pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[8 <./figures/junjie/camera.png>]
+<figures/qingzhou/before_registration_1.jpg, id=563, 1657.19125pt x 932.48375pt>
+File: figures/qingzhou/before_registration_1.jpg Graphic file (type jpg)
+<use figures/qingzhou/before_registration_1.jpg>
+Package pdftex.def Info: figures/qingzhou/before_registration_1.jpg  used on input line 206.
+(pdftex.def)             Requested size: 223.07211pt x 125.50993pt.
+<figures/qingzhou/before_registration_2.jpg, id=564, 1466.47874pt x 825.0825pt>
+File: figures/qingzhou/before_registration_2.jpg Graphic file (type jpg)
+<use figures/qingzhou/before_registration_2.jpg>
+Package pdftex.def Info: figures/qingzhou/before_registration_2.jpg  used on input line 211.
+(pdftex.def)             Requested size: 223.07211pt x 125.507pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[9 <./figures/qingzhou/before_registration_1.jpg> <./figures/qingzhou/before_registration_2.jpg>]
+<figures/qingzhou/before_fusion.jpg, id=575, 1642.135pt x 923.45pt>
+File: figures/qingzhou/before_fusion.jpg Graphic file (type jpg)
+<use figures/qingzhou/before_fusion.jpg>
+Package pdftex.def Info: figures/qingzhou/before_fusion.jpg  used on input line 239.
+(pdftex.def)             Requested size: 455.24411pt x 255.99973pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[10 <./figures/qingzhou/before_fusion.jpg>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[11]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[12]
+<figures/smallev.png, id=607, 580.41844pt x 235.63031pt>
+File: figures/smallev.png Graphic file (type png)
+<use figures/smallev.png>
+Package pdftex.def Info: figures/smallev.png  used on input line 345.
+(pdftex.def)             Requested size: 213.96529pt x 86.86185pt.
+<figures/bigev.png, id=608, 473.51906pt x 223.58531pt>
+File: figures/bigev.png Graphic file (type png)
+<use figures/bigev.png>
+Package pdftex.def Info: figures/bigev.png  used on input line 352.
+(pdftex.def)             Requested size: 213.96529pt x 101.02867pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[13 <./figures/smallev.png> <./figures/bigev.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 393.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 393.
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[14]
+<figures/Centralized processing architecture for swarm monocular SLAM robots.png, id=625, 1165.35374pt x 564.1075pt>
+File: figures/Centralized processing architecture for swarm monocular SLAM robots.png Graphic file (type png)
+<use figures/Centralized processing architecture for swarm monocular SLAM robots.png>
+Package pdftex.def Info: figures/Centralized processing architecture for swarm monocular SLAM robots.png  used on input line 474.
+(pdftex.def)             Requested size: 432.48051pt x 209.34485pt.
+<figures/overview flow chat.png, id=627, 1841.37938pt x 703.87968pt>
+File: figures/overview flow chat.png Graphic file (type png)
+<use figures/overview flow chat.png>
+Package pdftex.def Info: figures/overview flow chat.png  used on input line 483.
+(pdftex.def)             Requested size: 432.48051pt x 165.31508pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[15]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[16 <./figures/Centralized processing architecture for swarm monocular SLAM robots.png> <./figures/overview flow chat.png>]
+<figures/car/front.jpg, id=646, 511.15968pt x 540.51938pt>
 File: figures/car/front.jpg Graphic file (type jpg)
 <use figures/car/front.jpg>
-Package pdftex.def Info: figures/car/front.jpg  used on input line 477.
-(pdftex.def)             Requested size: 80.64185pt x 85.27246pt.
+Package pdftex.def Info: figures/car/front.jpg  used on input line 507.
+(pdftex.def)             Requested size: 136.57462pt x 144.41637pt.
+<figures/car/side.jpg, id=647, 585.68813pt x 636.12656pt>
 File: figures/car/side.jpg Graphic file (type jpg)
 <use figures/car/side.jpg>
-Package pdftex.def Info: figures/car/side.jpg  used on input line 484.
-(pdftex.def)             Requested size: 80.64185pt x 87.58171pt.
+Package pdftex.def Info: figures/car/side.jpg  used on input line 514.
+(pdftex.def)             Requested size: 136.57462pt x 148.33469pt.
+<figures/car/up.jpg, id=648, 639.13782pt x 648.92438pt>
 File: figures/car/up.jpg Graphic file (type jpg)
 <use figures/car/up.jpg>
-Package pdftex.def Info: figures/car/up.jpg  used on input line 491.
-(pdftex.def)             Requested size: 80.64185pt x 81.86787pt.
-<figures/car/V2_sch.png, id=261, 1173.38374pt x 830.10126pt>
+Package pdftex.def Info: figures/car/up.jpg  used on input line 521.
+(pdftex.def)             Requested size: 136.57462pt x 138.66446pt.
+<figures/car/V2_sch.png, id=649, 1173.38374pt x 830.10126pt>
 File: figures/car/V2_sch.png Graphic file (type png)
 <use figures/car/V2_sch.png>
-Package pdftex.def Info: figures/car/V2_sch.png  used on input line 501.
-(pdftex.def)             Requested size: 252.0pt x 178.26563pt.
+Package pdftex.def Info: figures/car/V2_sch.png  used on input line 531.
+(pdftex.def)             Requested size: 455.24411pt x 322.05357pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
 
-[7 <./figures/car/v1.jpg> <./figures/car/v1Body_sch.png> <./figures/car/v1Head_sch.png> <./figures/car/V2_sch.png>]
+[17 <./figures/car/front.jpg> <./figures/car/side.jpg> <./figures/car/up.jpg>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[18 <./figures/car/V2_sch.png>]
+<figures/robot_code_architecture.drawio.png, id=673, 1084.80281pt x 572.89032pt>
+File: figures/robot_code_architecture.drawio.png Graphic file (type png)
+<use figures/robot_code_architecture.drawio.png>
+Package pdftex.def Info: figures/robot_code_architecture.drawio.png  used on input line 580.
+(pdftex.def)             Requested size: 418.82375pt x 221.17973pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[19]
+<figures/junjie/pipeline.png, id=687, 529.98pt x 125.268pt>
+File: figures/junjie/pipeline.png Graphic file (type png)
+<use figures/junjie/pipeline.png>
+Package pdftex.def Info: figures/junjie/pipeline.png  used on input line 602.
+(pdftex.def)             Requested size: 455.24411pt x 107.60413pt.
+
+Underfull \vbox (badness 3930) has occurred while \output is active []
 
 
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
 
-[8
+[20 <./figures/robot_code_architecture.drawio.png>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
 
-] (main.aux)
+[21 <./figures/junjie/pipeline.png (PNG copy)>]
+<figures/junjie/depth.png, id=703, 1027.84pt x 770.88pt>
+File: figures/junjie/depth.png Graphic file (type png)
+<use figures/junjie/depth.png>
+Package pdftex.def Info: figures/junjie/depth.png  used on input line 633.
+(pdftex.def)             Requested size: 309.56265pt x 232.17151pt.
+<figures/junjie/before.png, id=704, 1098.35344pt x 529.22719pt>
+File: figures/junjie/before.png Graphic file (type png)
+<use figures/junjie/before.png>
+Package pdftex.def Info: figures/junjie/before.png  used on input line 640.
+(pdftex.def)             Requested size: 409.71692pt x 197.40991pt.
+<figures/junjie/after.png, id=705, 1101.36469pt x 527.72156pt>
+File: figures/junjie/after.png Graphic file (type png)
+<use figures/junjie/after.png>
+Package pdftex.def Info: figures/junjie/after.png  used on input line 645.
+(pdftex.def)             Requested size: 409.71692pt x 196.31683pt.
+<figures/junjie/point50.png, id=708, 553.31718pt x 368.1253pt>
+File: figures/junjie/point50.png Graphic file (type png)
+<use figures/junjie/point50.png>
+Package pdftex.def Info: figures/junjie/point50.png  used on input line 689.
+(pdftex.def)             Requested size: 213.83406pt x 142.26378pt.
+<figures/junjie/real50.png, id=709, 1027.84pt x 770.88pt>
+File: figures/junjie/real50.png Graphic file (type png)
+<use figures/junjie/real50.png>
+Package pdftex.def Info: figures/junjie/real50.png  used on input line 697.
+(pdftex.def)             Requested size: 189.67691pt x 142.26378pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[22 <./figures/junjie/depth.png (PNG copy)>]
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[23 <./figures/junjie/before.png> <./figures/junjie/after.png>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[24 <./figures/junjie/point50.png> <./figures/junjie/real50.png (PNG copy)>]
+<figures/qingzhou/mapper schematic.jpg, id=730, 2168.1pt x 644.4075pt>
+File: figures/qingzhou/mapper schematic.jpg Graphic file (type jpg)
+<use figures/qingzhou/mapper schematic.jpg>
+Package pdftex.def Info: figures/qingzhou/mapper schematic.jpg  used on input line 724.
+(pdftex.def)             Requested size: 455.24411pt x 135.30006pt.
+
+Overfull \hbox (20.45862pt too wide) in paragraph at lines 729--730
+[]\OT1/cmr/m/n/12 The Map-per pro-vides two main ex-ter-nal in-ter-faces: \OT1/cmtt/m/n/12 process[]frame \OT1/cmr/m/n/12 and \OT1/cmtt/m/n/12 save[]current[]map\OT1/cmr/m/n/12 .
+ []
+
+<figures/qingzhou/registraion schematic.jpg, id=732, 2368.85pt x 819.06pt>
+File: figures/qingzhou/registraion schematic.jpg Graphic file (type jpg)
+<use figures/qingzhou/registraion schematic.jpg>
+Package pdftex.def Info: figures/qingzhou/registraion schematic.jpg  used on input line 741.
+(pdftex.def)             Requested size: 455.24411pt x 157.3977pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[25 <./figures/qingzhou/mapper schematic.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+[]\OT1/cmss/m/n/12 Max cor-re-spon-
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 773--773
+[]\OT1/cmss/m/n/12 Max GICP it-er-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 776--776
+[]\OT1/cmss/m/n/12 Max trans-la-tion
+ []
+
+File: figures/qingzhou/before_registration_2.jpg Graphic file (type jpg)
+<use figures/qingzhou/before_registration_2.jpg>
+Package pdftex.def Info: figures/qingzhou/before_registration_2.jpg  used on input line 786.
+(pdftex.def)             Requested size: 223.07211pt x 125.507pt.
+<figures/qingzhou/after_registration.jpg, id=741, 1440.38126pt x 810.02625pt>
+File: figures/qingzhou/after_registration.jpg Graphic file (type jpg)
+<use figures/qingzhou/after_registration.jpg>
+Package pdftex.def Info: figures/qingzhou/after_registration.jpg  used on input line 792.
+(pdftex.def)             Requested size: 223.07211pt x 125.44153pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[26 <./figures/qingzhou/registraion schematic.jpg>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[27 <./figures/qingzhou/after_registration.jpg>]
+Overfull \hbox (26.18257pt too wide) in paragraph at lines 807--808
+[]\OT1/cmr/m/n/12 For ob-ser-va-tion points suc-cess-fully as-so-ci-ated with sur-fels, the pro-gram adopts a consistency-
+ []
+
+
+Overfull \hbox (7.80498pt too wide) in paragraph at lines 821--822
+[]\OT1/cmr/m/n/12 Normal and color at-tributes are up-dated in the same man-ner, with nor-mals re-normalized
+ []
+
+<figures/qingzhou/after fusion.jpg, id=752, 1589.94pt x 894.34125pt>
+File: figures/qingzhou/after fusion.jpg Graphic file (type jpg)
+<use figures/qingzhou/after fusion.jpg>
+Package pdftex.def Info: figures/qingzhou/after fusion.jpg  used on input line 828.
+(pdftex.def)             Requested size: 455.24411pt x 256.07715pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[28]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[29 <./figures/qingzhou/after fusion.jpg>]
+<figures/2DMAP/WALL.png, id=773, 554.07pt x 377.15906pt>
+File: figures/2DMAP/WALL.png Graphic file (type png)
+<use figures/2DMAP/WALL.png>
+Package pdftex.def Info: figures/2DMAP/WALL.png  used on input line 876.
+(pdftex.def)             Requested size: 291.35594pt x 198.32799pt.
+<figures/2DMAP/Suspended BLOCK.png, id=774, 322.20375pt x 449.42906pt>
+File: figures/2DMAP/Suspended BLOCK.png Graphic file (type png)
+<use figures/2DMAP/Suspended BLOCK.png>
+Package pdftex.def Info: figures/2DMAP/Suspended BLOCK.png  used on input line 883.
+(pdftex.def)             Requested size: 143.403pt x 200.033pt.
+<figures/2DMAP/SLOPE.png, id=775, 324.46219pt x 194.97844pt>
+File: figures/2DMAP/SLOPE.png Graphic file (type png)
+<use figures/2DMAP/SLOPE.png>
+Package pdftex.def Info: figures/2DMAP/SLOPE.png  used on input line 890.
+(pdftex.def)             Requested size: 213.96529pt x 128.57906pt.
+<figures/2DMAP/PIT.png, id=776, 517.935pt x 305.64188pt>
+File: figures/2DMAP/PIT.png Graphic file (type png)
+<use figures/2DMAP/PIT.png>
+Package pdftex.def Info: figures/2DMAP/PIT.png  used on input line 897.
+(pdftex.def)             Requested size: 213.96529pt x 126.26537pt.
+<figures/merge2dmap/2/map_costmap_view.jpg, id=780, 618.81187pt x 665.48625pt>
+File: figures/merge2dmap/2/map_costmap_view.jpg Graphic file (type jpg)
+<use figures/merge2dmap/2/map_costmap_view.jpg>
+Package pdftex.def Info: figures/merge2dmap/2/map_costmap_view.jpg  used on input line 917.
+(pdftex.def)             Requested size: 95.60431pt x 102.8142pt.
+<figures/merge2dmap/3/map_costmap_view.jpg, id=781, 811.53188pt x 761.84625pt>
+File: figures/merge2dmap/3/map_costmap_view.jpg Graphic file (type jpg)
+<use figures/merge2dmap/3/map_costmap_view.jpg>
+Package pdftex.def Info: figures/merge2dmap/3/map_costmap_view.jpg  used on input line 924.
+(pdftex.def)             Requested size: 100.15425pt x 94.02156pt.
+<figures/merge2dmap/4/map_costmap_view.jpg, id=782, 931.98187pt x 761.84625pt>
+File: figures/merge2dmap/4/map_costmap_view.jpg Graphic file (type jpg)
+<use figures/merge2dmap/4/map_costmap_view.jpg>
+Package pdftex.def Info: figures/merge2dmap/4/map_costmap_view.jpg  used on input line 931.
+(pdftex.def)             Requested size: 104.7042pt x 85.58194pt.
+<figures/merge2dmap/5/map_costmap_view.jpg, id=783, 931.98187pt x 761.84625pt>
+File: figures/merge2dmap/5/map_costmap_view.jpg Graphic file (type jpg)
+<use figures/merge2dmap/5/map_costmap_view.jpg>
+Package pdftex.def Info: figures/merge2dmap/5/map_costmap_view.jpg  used on input line 938.
+(pdftex.def)             Requested size: 104.7042pt x 85.58194pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[31 <./figures/2DMAP/WALL.png> <./figures/2DMAP/Suspended BLOCK.png> <./figures/2DMAP/SLOPE.png> <./figures/2DMAP/PIT.png> <./figures/merge2dmap/2/map_costmap_view.jpg> <./figures/merge2dmap/3/map_costmap_view.jpg> <./figures/merge2dmap/4/map_costmap_view.jpg> <./figures/merge2dmap/5/map_costmap_view.jpg>]
+<figures/weijie/7.png, id=796, 825.83531pt x 190.46156pt>
+File: figures/weijie/7.png Graphic file (type png)
+<use figures/weijie/7.png>
+Package pdftex.def Info: figures/weijie/7.png  used on input line 973.
+(pdftex.def)             Requested size: 455.24411pt x 104.99248pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[32 <./figures/weijie/7.png>]
+<figures/weijie/8.png, id=803, 138.7584pt x 121.4136pt>
+File: figures/weijie/8.png Graphic file (type png)
+<use figures/weijie/8.png>
+Package pdftex.def Info: figures/weijie/8.png  used on input line 994.
+(pdftex.def)             Requested size: 145.68144pt x 127.47691pt.
+<figures/weijie/9.png, id=804, 139.2402pt x 125.7498pt>
+File: figures/weijie/9.png Graphic file (type png)
+<use figures/weijie/9.png>
+Package pdftex.def Info: figures/weijie/9.png  used on input line 999.
+(pdftex.def)             Requested size: 145.68144pt x 131.57106pt.
+<figures/weijie/10.png, id=805, 139.2402pt x 131.0496pt>
+File: figures/weijie/10.png Graphic file (type png)
+<use figures/weijie/10.png>
+Package pdftex.def Info: figures/weijie/10.png  used on input line 1004.
+(pdftex.def)             Requested size: 145.68144pt x 137.11621pt.
+<figures/weijie/1.jpg, id=812, 528.97626pt x 582.175pt>
+File: figures/weijie/1.jpg Graphic file (type jpg)
+<use figures/weijie/1.jpg>
+Package pdftex.def Info: figures/weijie/1.jpg  used on input line 1022.
+(pdftex.def)             Requested size: 218.51521pt x 240.48772pt.
+<figures/weijie/2.jpg, id=813, 521.95pt x 577.15625pt>
+File: figures/weijie/2.jpg Graphic file (type jpg)
+<use figures/weijie/2.jpg>
+Package pdftex.def Info: figures/weijie/2.jpg  used on input line 1027.
+(pdftex.def)             Requested size: 218.51521pt x 241.62898pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[33 <./figures/weijie/8.png> <./figures/weijie/9.png> <./figures/weijie/10.png>]
+<figures/weijie/3.png, id=829, 1120.9378pt x 510.40688pt>
+File: figures/weijie/3.png Graphic file (type png)
+<use figures/weijie/3.png>
+Package pdftex.def Info: figures/weijie/3.png  used on input line 1037.
+(pdftex.def)             Requested size: 364.19667pt x 165.83353pt.
+
+Underfull \vbox (badness 2980) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[34 <./figures/weijie/1.jpg> <./figures/weijie/2.jpg> <./figures/weijie/3.png>]
+<figures/result/Reality.jpg, id=836, 1712.3975pt x 1284.8pt>
+File: figures/result/Reality.jpg Graphic file (type jpg)
+<use figures/result/Reality.jpg>
+Package pdftex.def Info: figures/result/Reality.jpg  used on input line 1060.
+(pdftex.def)             Requested size: 182.09486pt x 136.62337pt.
+<figures/result/Point cloud of scan results.png, id=837, 1001.24063pt x 611.28375pt>
+File: figures/result/Point cloud of scan results.png Graphic file (type png)
+<use figures/result/Point cloud of scan results.png>
+Package pdftex.def Info: figures/result/Point cloud of scan results.png  used on input line 1067.
+(pdftex.def)             Requested size: 218.51521pt x 133.40085pt.
+<figures/result/The Divided Wall.png, id=838, 529.98pt x 473.51906pt>
+File: figures/result/The Divided Wall.png Graphic file (type png)
+<use figures/result/The Divided Wall.png>
+Package pdftex.def Info: figures/result/The Divided Wall.png  used on input line 1081.
+(pdftex.def)             Requested size: 136.57462pt x 122.02103pt.
+<figures/result/The badminton shuttlecock that was smoothed out.png, id=839, 1334.9875pt x 815.045pt>
+File: figures/result/The badminton shuttlecock that was smoothed out.png Graphic file (type png)
+<use figures/result/The badminton shuttlecock that was smoothed out.png>
+Package pdftex.def Info: figures/result/The badminton shuttlecock that was smoothed out.png  used on input line 1088.
+(pdftex.def)             Requested size: 145.68144pt x 88.9339pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1089
+[]\OT1/cmss/bx/it/12 (b) |\OT1/cmss/m/n/12 A small ob-sta-cle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1089--1089
+\OT1/cmss/m/n/12 smoothed out dur-ing fu-
+ []
+
+<figures/result/Obstacles caused by identification errors.png, id=840, 319.1925pt x 242.40562pt>
+File: figures/result/Obstacles caused by identification errors.png Graphic file (type png)
+<use figures/result/Obstacles caused by identification errors.png>
+Package pdftex.def Info: figures/result/Obstacles caused by identification errors.png  used on input line 1095.
+(pdftex.def)             Requested size: 136.57462pt x 103.71823pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[35 <./figures/result/Reality.jpg> <./figures/result/Point cloud of scan results.png> <./figures/result/The Divided Wall.png> <./figures/result/The badminton shuttlecock that was smoothed out.png> <./figures/result/Obstacles caused by identification errors.png>]
+<figures/weijie/11.png, id=852, 479.8728pt x 239.9364pt>
+File: figures/weijie/11.png Graphic file (type png)
+<use figures/weijie/11.png>
+Package pdftex.def Info: figures/weijie/11.png  used on input line 1128.
+(pdftex.def)             Requested size: 432.48051pt x 216.25195pt.
+<figures/weijie/12.png, id=853, 416.757pt x 210.0648pt>
+File: figures/weijie/12.png Graphic file (type png)
+<use figures/weijie/12.png>
+Package pdftex.def Info: figures/weijie/12.png  used on input line 1134.
+(pdftex.def)             Requested size: 432.48051pt x 217.99104pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[36]
+<figures/weijie/rA.png, id=860, 142.131pt x 106.4778pt>
+File: figures/weijie/rA.png Graphic file (type png)
+<use figures/weijie/rA.png>
+Package pdftex.def Info: figures/weijie/rA.png  used on input line 1151.
+(pdftex.def)             Requested size: 91.04742pt x 68.21053pt.
+
+Underfull \hbox (badness 3977) in paragraph at lines 1152--1152
+[]\OT1/cmss/bx/it/12 (a) |\OT1/cmss/m/n/12 Sce-nario A:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1152
+\OT1/cmss/m/n/12 real-world scene
+ []
+
+<figures/weijie/cA.png, id=861, 319.1925pt x 493.845pt>
+File: figures/weijie/cA.png Graphic file (type png)
+<use figures/weijie/cA.png>
+Package pdftex.def Info: figures/weijie/cA.png  used on input line 1157.
+(pdftex.def)             Requested size: 91.04742pt x 140.8603pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1158
+[]\OT1/cmss/bx/it/12 (b) |\OT1/cmss/m/n/12 Sce-nario
+ []
+
+
+Underfull \hbox (badness 4291) in paragraph at lines 1158--1158
+\OT1/cmss/m/n/12 A: costmap and
+ []
+
+<figures/weijie/rB.png, id=862, 126.7134pt x 94.9146pt>
+File: figures/weijie/rB.png Graphic file (type png)
+<use figures/weijie/rB.png>
+Package pdftex.def Info: figures/weijie/rB.png  used on input line 1163.
+(pdftex.def)             Requested size: 91.04742pt x 68.1994pt.
+
+Underfull \hbox (badness 4328) in paragraph at lines 1164--1164
+[]\OT1/cmss/bx/it/12 (c) |\OT1/cmss/m/n/12 Sce-nario B:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+\OT1/cmss/m/n/12 real-world scene
+ []
+
+<figures/weijie/cB.png, id=863, 439.6425pt x 493.845pt>
+File: figures/weijie/cB.png Graphic file (type png)
+<use figures/weijie/cB.png>
+Package pdftex.def Info: figures/weijie/cB.png  used on input line 1169.
+(pdftex.def)             Requested size: 91.04742pt x 102.27122pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
+[]\OT1/cmss/bx/it/12 (d) |\OT1/cmss/m/n/12 Sce-nario
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 1170--1170
+\OT1/cmss/m/n/12 B: costmap and
+ []
+
+<figures/weijie/rC.png, id=864, 106.4778pt x 79.9788pt>
+File: figures/weijie/rC.png Graphic file (type png)
+<use figures/weijie/rC.png>
+Package pdftex.def Info: figures/weijie/rC.png  used on input line 1177.
+(pdftex.def)             Requested size: 91.04742pt x 68.38869pt.
+
+Underfull \hbox (badness 4341) in paragraph at lines 1178--1178
+[]\OT1/cmss/bx/it/12 (e) |\OT1/cmss/m/n/12 Sce-nario C:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\OT1/cmss/m/n/12 real-world scene
+ []
+
+<figures/weijie/cC.png, id=865, 548.0475pt x 457.71pt>
+File: figures/weijie/cC.png Graphic file (type png)
+<use figures/weijie/cC.png>
+Package pdftex.def Info: figures/weijie/cC.png  used on input line 1183.
+(pdftex.def)             Requested size: 91.04742pt x 76.0357pt.
+
+Underfull \hbox (badness 5490) in paragraph at lines 1184--1184
+[]\OT1/cmss/bx/it/12 (f) |\OT1/cmss/m/n/12 Sce-nario C:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
+\OT1/cmss/m/n/12 costmap and
+ []
+
+<figures/weijie/rD.png, id=866, 136.8312pt x 102.6234pt>
+File: figures/weijie/rD.png Graphic file (type png)
+<use figures/weijie/rD.png>
+Package pdftex.def Info: figures/weijie/rD.png  used on input line 1189.
+(pdftex.def)             Requested size: 91.04742pt x 68.28596pt.
+
+Underfull \hbox (badness 3209) in paragraph at lines 1190--1190
+[]\OT1/cmss/bx/it/12 (g) |\OT1/cmss/m/n/12 Sce-nario D:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1190
+\OT1/cmss/m/n/12 real-world scene
+ []
+
+<figures/weijie/cD.png, id=867, 548.0475pt x 620.3175pt>
+File: figures/weijie/cD.png Graphic file (type png)
+<use figures/weijie/cD.png>
+Package pdftex.def Info: figures/weijie/cD.png  used on input line 1195.
+(pdftex.def)             Requested size: 91.04742pt x 103.0484pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1196
+[]\OT1/cmss/bx/it/12 (h) |\OT1/cmss/m/n/12 Sce-nario
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 1196--1196
+\OT1/cmss/m/n/12 D: costmap and
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[37 <./figures/weijie/11.png> <./figures/weijie/12.png>]
+<figures/weijie/13.png, id=875, 243.7908pt x 183.084pt>
+File: figures/weijie/13.png Graphic file (type png)
+<use figures/weijie/13.png>
+Package pdftex.def Info: figures/weijie/13.png  used on input line 1204.
+(pdftex.def)             Requested size: 218.51521pt x 164.10638pt.
+<figures/weijie/14.png, id=876, 228.3732pt x 171.039pt>
+File: figures/weijie/14.png Graphic file (type png)
+<use figures/weijie/14.png>
+Package pdftex.def Info: figures/weijie/14.png  used on input line 1206.
+(pdftex.def)             Requested size: 218.51521pt x 163.66315pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[38 <./figures/weijie/rA.png> <./figures/weijie/cA.png> <./figures/weijie/rB.png> <./figures/weijie/cB.png> <./figures/weijie/rC.png> <./figures/weijie/cC.png> <./figures/weijie/rD.png> <./figures/weijie/cD.png> <./figures/weijie/13.png> <./figures/weijie/14.png>]
+<figures/weijie/15.png, id=893, 226.9278pt x 170.0754pt>
+File: figures/weijie/15.png Graphic file (type png)
+<use figures/weijie/15.png>
+Package pdftex.def Info: figures/weijie/15.png  used on input line 1217.
+(pdftex.def)             Requested size: 218.51521pt x 163.77396pt.
+<figures/weijie/16.png, id=894, 664.73344pt x 440.39531pt>
+File: figures/weijie/16.png Graphic file (type png)
+<use figures/weijie/16.png>
+Package pdftex.def Info: figures/weijie/16.png  used on input line 1224.
+(pdftex.def)             Requested size: 218.51521pt x 144.76642pt.
+<figures/weijie/17.png, id=896, 722.7pt x 433.62pt>
+File: figures/weijie/17.png Graphic file (type png)
+<use figures/weijie/17.png>
+Package pdftex.def Info: figures/weijie/17.png  used on input line 1241.
+(pdftex.def)             Requested size: 409.71692pt x 245.82944pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[39 <./figures/weijie/15.png> <./figures/weijie/16.png>]
+Overfull \hbox (1.1081pt too wide) in paragraph at lines 1254--1255
+\OT1/cmr/m/n/12 nects im-age ac-qui-si-tion, monoc-u-lar image-to-point-cloud re-con-struc-tion, point cloud merg-
+ []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[40 <./figures/weijie/17.png>]
+Overfull \hbox (5.74203pt too wide) in paragraph at lines 1267--1268
+[]\OT1/cmr/m/n/12 The third di-rec-tion con-cerns plan-ning and co-or-di-na-tion. The cur-rent cost-aware frontier-
+ []
+
+(./main.bbl
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[41]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[42])
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[43]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[44]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1344
+
+ []
+
+<figures/car/v1.jpg, id=983, 1284.8pt x 1374.13374pt>
+File: figures/car/v1.jpg Graphic file (type jpg)
+<use figures/car/v1.jpg>
+Package pdftex.def Info: figures/car/v1.jpg  used on input line 1357.
+(pdftex.def)             Requested size: 364.19667pt x 389.51447pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[46
+
+]
+<figures/car/v1Body_sch.png, id=988, 1173.38374pt x 830.10126pt>
+File: figures/car/v1Body_sch.png Graphic file (type png)
+<use figures/car/v1Body_sch.png>
+Package pdftex.def Info: figures/car/v1Body_sch.png  used on input line 1366.
+(pdftex.def)             Requested size: 218.51521pt x 154.57964pt.
+<figures/car/v1Head_sch.png, id=989, 1173.38374pt x 830.10126pt>
+File: figures/car/v1Head_sch.png Graphic file (type png)
+<use figures/car/v1Head_sch.png>
+Package pdftex.def Info: figures/car/v1Head_sch.png  used on input line 1373.
+(pdftex.def)             Requested size: 218.51521pt x 154.57964pt.
+
+Underfull \vbox (badness 7116) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[47 <./figures/car/v1.jpg> <./figures/car/v1Body_sch.png> <./figures/car/v1Head_sch.png>]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[48]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[49]
+Overfull \hbox (46.77438pt too wide) in paragraph at lines 1466--1467
+\OT1/cmr/m/n/12 grid into three cat-e-gories us-ing se-man-tic la-bels: UN-KNOWN, EX-PLORABLE, and BLOCKED [[]26[],
+ []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[50]
+<figures/chizou/traversability.png, id=1029, 673.51625pt x 340.27126pt>
+File: figures/chizou/traversability.png Graphic file (type png)
+<use figures/chizou/traversability.png>
+Package pdftex.def Info: figures/chizou/traversability.png  used on input line 1520.
+(pdftex.def)             Requested size: 409.71692pt x 206.9992pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[51 <./figures/chizou/traversability.png>]
+<figures/chizou/pipeline.png, id=1037, 1015.8753pt x 209.1012pt>
+File: figures/chizou/pipeline.png Graphic file (type png)
+<use figures/chizou/pipeline.png>
+Package pdftex.def Info: figures/chizou/pipeline.png  used on input line 1537.
+(pdftex.def)             Requested size: 409.71692pt x 84.33455pt.
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[52 <./figures/chizou/pipeline.png>]
+<figures/chizou/groundlayer.png, id=1048, 672.01062pt x 300.12125pt>
+File: figures/chizou/groundlayer.png Graphic file (type png)
+<use figures/chizou/groundlayer.png>
+Package pdftex.def Info: figures/chizou/groundlayer.png  used on input line 1556.
+(pdftex.def)             Requested size: 409.71692pt x 182.9821pt.
+
+Overfull \hbox (18.29414pt too wide) in paragraph at lines 1563--1564
+[]\OT1/cmr/m/n/12 For well-observed cells, the fi-nal hard block is con-structed from \OT1/cmtt/m/n/12 obstacle[]core\OT1/cmr/m/n/12 , \OT1/cmtt/m/n/12 step[]edge\OT1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[53 <./figures/chizou/groundlayer.png>]
+<figures/chizou/semantic_cost_frame5d.jpg, id=1059, 4607.2125pt x 2303.60625pt>
+File: figures/chizou/semantic_cost_frame5d.jpg Graphic file (type jpg)
+<use figures/chizou/semantic_cost_frame5d.jpg>
+Package pdftex.def Info: figures/chizou/semantic_cost_frame5d.jpg  used on input line 1577.
+(pdftex.def)             Requested size: 409.71692pt x 204.8551pt.
+<figures/chizou/morecase.jpg, id=1061, 5954.245pt x 1983.41pt>
+File: figures/chizou/morecase.jpg Graphic file (type jpg)
+<use figures/chizou/morecase.jpg>
+Package pdftex.def Info: figures/chizou/morecase.jpg  used on input line 1596.
+(pdftex.def)             Requested size: 409.71692pt x 136.46199pt.
+
+Underfull \vbox (badness 4967) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[54 <./figures/chizou/semantic_cost_frame5d.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[55 <./figures/chizou/morecase.jpg>]
+Overfull \hbox (15.3699pt too wide) in paragraph at lines 1673--1674
+[]\OT1/cmr/m/n/12 Table []5[] and Ta-ble []6[] show that in-creas-ing \OT1/cmtt/m/n/12 traversable[]step[]height \OT1/cmr/m/n/12 or \OT1/cmtt/m/n/12 min[]step[]support
+ []
+
+
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[56]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[57]
+Underfull \hbox (badness 1137) has occurred while \output is active
+[]\OT1/cmss/m/n/12 Zhuyu Dong, Wei-jie Chen, Jun-jie
+ []
+
+[58] (./main.aux)
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-10-09>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FF2036D6C359A5EF0D470BAEBFF273CC;6212.
+(rerunfilecheck)             Checksum: 62465604BCDB9E12F45B482DCB7AF071;22015.
  ) 
 Here is how much of TeX's memory you used:
- 14258 strings out of 468080
- 229943 string characters out of 5425771
- 654467 words of memory out of 5000000
- 42707 multiletter control sequences out of 15000+600000
- 666801 words of font info for 114 fonts, out of 8000000 for 9000
+ 15561 strings out of 467525
+ 253370 string characters out of 5418982
+ 668829 words of memory out of 5000000
+ 44047 multiletter control sequences out of 15000+600000
+ 643697 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1296b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/dongz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 4443183 bytes).
+ 75i,15n,79p,1366b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (60 pages, 11990016 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1251 PDF objects out of 1440 (max. 8388607)
+ 1023 compressed objects within 11 object streams
+ 238 named destinations out of 1000 (max. 500000)
+ 1103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

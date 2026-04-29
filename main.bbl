@@ -1,63 +1,97 @@
-\newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{{STM}23}
+\begin{thebibliography}{10}
 
-\bibitem[Elf89]{elfes1989occupancy}
-Alberto Elfes.
-\newblock Using occupancy grids for mobile robot perception and navigation.
-\newblock {\em Computer}, 22(6):46--57, 1989.
+\bibitem{ref6}
+R.~Mur-Artal and J.~D. Tard{\'o}s, ``Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras,'' {\em IEEE Transactions on Robotics}, vol.~33, no.~5, pp.~1255--1262, 2017.
 
-\bibitem[{Esp}26]{espressif_esp32_hwref}
-{Espressif Systems}.
-\newblock {\em ESP32 Hardware Reference}.
+\bibitem{ref7}
+M.~Labb{\'e} and F.~Michaud, ``Rtab-map as an open-source lidar and visual simultaneous localization and mapping library for large-scale and long-term online operation,'' {\em Journal of Field Robotics}, vol.~36, no.~2, pp.~416--446, 2019.
+
+\bibitem{ref8}
+W.~Hess, D.~Kohler, H.~Rapp, and D.~Andor, ``Real-time loop closure in 2d lidar slam,'' in {\em Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)}, (Stockholm, Sweden), pp.~1271--1278, 2016.
+
+\bibitem{godard2019}
+C.~Godard, O.~Mac~Aodha, M.~Firman, and G.~J. Brostow, ``Digging into self-supervised monocular depth estimation,'' in {\em Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, pp.~3827--3837, 2019.
+
+\bibitem{yang2024}
+L.~Yang, B.~Kang, Z.~Huang, Z.~Zhao, X.~Xu, J.~Feng, and H.~Zhao, ``Depth anything v2,'' {\em arXiv preprint arXiv:2406.09414}, 2024.
+
+\bibitem{bochkovskii2024}
+A.~Bochkovskii, A.~Delaunoy, H.~Germain, M.~Santos, Y.~Zhou, S.~R. Richter, and V.~Koltun, ``Depth pro: Sharp monocular metric depth in less than a second,'' {\em arXiv preprint arXiv:2410.02073}, 2024.
+
+\bibitem{hartley2004}
+R.~Hartley and A.~Zisserman, {\em Multiple View Geometry in Computer Vision}.
+\newblock Cambridge, U.K.: Cambridge University Press, 2~ed., 2004.
+
+\bibitem{zhang2000}
+Z.~Zhang, ``A flexible new technique for camera calibration,'' {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~22, no.~11, pp.~1330--1334, 2000.
+
+\bibitem{besl1992icp}
+P.~J. Besl and N.~D. McKay, ``A method for registration of 3-d shapes,'' {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~14, no.~2, pp.~239--256, 1992.
+
+\bibitem{segal2009gicp}
+A.~Segal, D.~Haehnel, and S.~Thrun, ``Generalized-icp,'' in {\em Proceedings of Robotics: Science and Systems (RSS)}, 2009.
+
+\bibitem{pfister2000surfels}
+H.~Pfister, M.~Zwicker, J.~van Baar, and M.~Gross, ``Surfels: Surface elements as rendering primitives,'' in {\em Proceedings of SIGGRAPH 2000}, 2000.
+
+\bibitem{elfes1989occupancy}
+A.~Elfes, ``Using occupancy grids for mobile robot perception and navigation,'' {\em Computer}, vol.~22, no.~6, pp.~46--57, 1989.
+
+\bibitem{gu2008traversability}
+J.~Gu, Q.~Cao, and Y.~Huang, ``Rapid traversability assessment in 2.5d grid-based map on rough terrain,'' {\em International Journal of Advanced Robotic Systems}, vol.~5, no.~4, pp.~389--398, 2008.
+
+\bibitem{meng2018terrain}
+X.~Meng, Z.~Cao, S.~Liang, L.~Pang, S.~Wang, and C.~Zhou, ``A terrain description method for traversability analysis based on elevation grid map,'' {\em International Journal of Advanced Robotic Systems}, vol.~15, no.~1, pp.~1--12, 2018.
+
+\bibitem{weinmann2013feature}
+M.~Weinmann, B.~Jutzi, and C.~Mallet, ``Feature relevance assessment for the semantic interpretation of 3d point cloud data,'' {\em ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences}, vol.~II-5/W2, pp.~313--318, 2013.
+
+\bibitem{espressif_esp32_hwref}
+{Espressif Systems}, {\em ESP32 Hardware Reference}.
 \newblock Espressif Systems, 2026.
-\newblock Official hardware reference for ESP32, including datasheet and
-  technical reference links. Accessed: 2026-04-20.
+\newblock Official hardware reference for ESP32, including datasheet and technical reference links. Accessed: 2026-04-20.
 
-\bibitem[{Fre}25]{freertos_ref_manual}
-{FreeRTOS}.
-\newblock {\em FreeRTOS Reference Manual}.
-\newblock FreeRTOS, 2025.
-\newblock Official reference manual covering tasks, mutexes, and priority
-  inheritance. Accessed: 2026-04-20.
-
-\bibitem[GCH08]{gu2008traversability}
-Jiajun Gu, Qixin Cao, and Yi~Huang.
-\newblock Rapid traversability assessment in 2.5d grid-based map on rough
-  terrain.
-\newblock {\em International Journal of Advanced Robotic Systems},
-  5(4):389--398, 2008.
-
-\bibitem[{Inv}13]{invensense_mpu6050}
-{InvenSense}.
-\newblock {\em MPU-6000 and MPU-6050 Product Specification}.
+\bibitem{invensense_mpu6050}
+{InvenSense}, {\em MPU-6000 and MPU-6050 Product Specification}.
 \newblock InvenSense, 2013.
 \newblock Revision 3.4, official product specification. Accessed: 2026-04-20.
 
-\bibitem[{LCS}26]{lcsc_marketplace}
-{LCSC}.
-\newblock Lcsc component marketplace.
-\newblock \url{https://www.szlcsc.com/}, 2026.
-\newblock Component price source used for the BOM in this work. Accessed:
-  2026-04-19.
-
-\bibitem[MCL{\etalchar{+}}18]{meng2018terrain}
-Xiangrui Meng, Zhiqiang Cao, Shuang Liang, Lei Pang, Shuo Wang, and Chao Zhou.
-\newblock A terrain description method for traversability analysis based on
-  elevation grid map.
-\newblock {\em International Journal of Advanced Robotic Systems}, 15(1):1--12,
-  2018.
-
-\bibitem[{STM}23]{st_l298}
-{STMicroelectronics}.
-\newblock {\em L298 Dual Full-Bridge Driver Datasheet}.
+\bibitem{st_l298}
+{STMicroelectronics}, {\em L298 Dual Full-Bridge Driver Datasheet}.
 \newblock STMicroelectronics, 2023.
 \newblock Official datasheet, Rev 5. Accessed: 2026-04-20.
 
-\bibitem[WJM13]{weinmann2013feature}
-Martin Weinmann, Boris Jutzi, and Cl{\'e}ment Mallet.
-\newblock Feature relevance assessment for the semantic interpretation of 3d
-  point cloud data.
-\newblock {\em ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial
-  Information Sciences}, II-5/W2:313--318, 2013.
+\bibitem{lcsc_marketplace}
+{LCSC}, ``Lcsc component marketplace.'' \url{https://www.szlcsc.com/}, 2026.
+\newblock Component price source used for the BOM in this work. Accessed: 2026-04-19.
+
+\bibitem{freertos_ref_manual}
+{FreeRTOS}, {\em FreeRTOS Reference Manual}.
+\newblock FreeRTOS, 2025.
+\newblock Official reference manual covering tasks, mutexes, and priority inheritance. Accessed: 2026-04-20.
+
+\bibitem{ref1}
+M.~Zhu, Z.~Liu, W.~Li, S.~Wang, and Q.~Zhang, ``Improved wavefront frontier detection-utility value task allocation for multi-robot collaborative environmental exploration,'' {\em Automation in Construction}, 2026.
+
+\bibitem{ref2}
+A.~A. Amanatiadis and S.~A. Chatzichristofis, ``A multi-objective exploration strategy for mobile robots under operational constraints,'' in {\em Proceedings of the IEEE International Conference}, 2013.
+
+\bibitem{ref3}
+S.~Choudhury, J.~K. Gupta, M.~J. Kochenderfer, and D.~Sadigh, ``Dynamic multi-robot task allocation under uncertainty and temporal constraints,'' {\em Autonomous Robots}, vol.~46, no.~1, pp.~1--21, 2022.
+
+\bibitem{ref4}
+M.~Catellani and L.~Sabattini, ``Distributed control of a limited angular field-of-view multi-robot system in communication-denied scenarios: A probabilistic approach,'' {\em IEEE Robotics and Automation Letters}, vol.~8, no.~12, pp.~1--8, 2023.
+
+\bibitem{ref5}
+G.~Best, R.~Garg, and J.~Keller, ``Multi-robot, multi-sensor exploration of multifarious environments with full mission aerial autonomy,'' {\em The International Journal of Robotics Research}, 2024.
+
+\bibitem{sanchez2019pff}
+C.~M. S{\'a}nchez, M.~Zella, J.~Capit{\'a}n, and P.~J. Marr{\'o}n, ``Efficient traversability mapping for service robots using a point-cloud fast filter (pff),'' in {\em Proceedings of the 19th International Conference on Advanced Robotics (ICAR)}, pp.~584--589, 2019.
+
+\bibitem{carvalho2024traversability}
+A.~E. Carvalho, J.~F. Ferreira, and D.~Portugal, ``3d traversability analysis and path planning based on mechanical effort for ugvs in forest environments,'' {\em Robotics and Autonomous Systems}, vol.~171, p.~104560, 2024.
+
+\bibitem{chen2022gpu}
+Y.~Chen, S.~Lai, J.~Cui, B.~Wang, and B.~M. Chen, ``Gpu-accelerated incremental euclidean distance transform for online motion planning of mobile robots,'' {\em IEEE Robotics and Automation Letters}, vol.~7, no.~3, pp.~6894--6901, 2022.
 
 \end{thebibliography}

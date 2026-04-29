@@ -1,0 +1,94 @@
+\contentsline {section}{\numberline {1}Introduction and Literature Review}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Related Work on Low-Cost SLAM and Multi-Robot Exploration}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Theoretical, Mathematical and Scientific Background}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Relative Pose Estimation of the Robot}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Coordinate Systems and the Chain Rule}{6}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Coordinate Transformation Update Based on Velocity and Attitude}{6}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Image-to-Point Cloud Reconstruction}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Monocular Depth Estimation}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Relative Depth and Metric Depth}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Pinhole Camera Model}{8}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Back-Projection Geometry}{8}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}Camera Calibration}{8}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.3}Point Clould Merging}{9}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Registration}{9}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Surface Fusion}{10}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}2D Map Generation and Cost Modeling}{11}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Two-Dimensional Grid Map and Its Role}{11}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Ground Layer Selection}{11}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Eigenvalues and Eigenvectors for Geometric Characteristics}{12}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}Path Planning}{14}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Map Representation and Frontier Definition}{14}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Robot Motion and Coordinate Model}{14}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Path Planning Method (\(A^*\))}{14}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Collision Detection Model}{14}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Perception Models and Information Acquisition}{14}{subsubsection.2.5.5}%
+\contentsline {subsubsection}{\numberline {2.5.6}Observation Overlap Constraint}{15}{subsubsection.2.5.6}%
+\contentsline {subsubsection}{\numberline {2.5.7}Single-Robot Decision-Making Model}{15}{subsubsection.2.5.7}%
+\contentsline {subsubsection}{\numberline {2.5.8}Multi-Robot Collision Avoidance}{15}{subsubsection.2.5.8}%
+\contentsline {subsubsection}{\numberline {2.5.9}Field-of-View Constraints and Cooperative Avoidance}{15}{subsubsection.2.5.9}%
+\contentsline {section}{\numberline {3}Methods, Setups and Software Implementation}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Architecture Overview}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Robot Platform}{17}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Second-Generation Platform}{17}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Bill of Materials and Cost Estimate}{19}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}RTOS-Based Robot Control Architecture}{19}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Image-to-Point Cloud Reconstruction}{20}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Pipeline Overview}{20}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Image Input and Pre-processing}{21}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Depth Model Selection}{21}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Camera Calibration Procedure}{21}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Point Cloud Post-processing}{21}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}Runtime Performance}{22}{subsubsection.3.4.6}%
+\contentsline {subsubsection}{\numberline {3.4.7}Distance Accuracy Evaluation}{22}{subsubsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.5}Point Cloud Merging}{24}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}System Overview and Mapper Pipeline}{24}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Registration and Supporting Modules}{25}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Surface Fusion Module}{26}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.6}2D Map Generation and Cost Modeling}{28}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Costing computation.}{29}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Environment types and state conversion.}{30}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Map overwrite and merging.}{30}{subsubsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.7}Path Planning}{31}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Path-Planning Overview}{31}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Perception and Map Update}{32}{subsubsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.3}Path Planning and Decision Making}{32}{subsubsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.4}Motion and Constraints}{32}{subsubsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.5}Multi-Robot Coordination}{33}{subsubsection.3.7.5}%
+\contentsline {subsubsection}{\numberline {3.7.6}Design Justification and Comparison with Existing Methods}{33}{subsubsection.3.7.6}%
+\contentsline {section}{\numberline {4}Results, analysis, and discussion}{35}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Scanning Result Analysis}{35}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Time Consumption and Pipeline Analysis}{36}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Single-Robot Scene Scanning Experiment}{37}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Multiple Vehicles Scanning Simultaneously}{39}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusions and Future Work}{40}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Conclusion}{40}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Future Work}{41}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Reference}{41}{section.6}%
+\contentsline {section}{\numberline {7}Contribution}{43}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Roles of Team Members in the Project}{43}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Subsections and Responsible Authors}{44}{subsection.7.2}%
+\contentsline {section}{\numberline {A}Hardware Iteration of the Robot Platform}{46}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}First-Generation Robot}{46}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Comparison Between the Two Generations}{48}{subsection.A.2}%
+\contentsline {section}{\numberline {B}Image-to-Point-Cloud Reconstruction Appendix}{48}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Image-to-Point-Cloud Reconstruction}{48}{subsection.B.1}%
+\contentsline {section}{\numberline {C}Feature Coarse Registration}{48}{appendix.C}%
+\contentsline {section}{\numberline {D}Experimental Point-Cloud-to-2D Map Techniques}{49}{appendix.D}%
+\contentsline {subsection}{\numberline {D.1}Theoretical, Mathematical and Scientific Background}{49}{subsection.D.1}%
+\contentsline {subsubsection}{\numberline {D.1.1}Theoretical Basis of 2D Grid-Based Terrain Representation}{49}{subsubsection.D.1.1}%
+\contentsline {subsubsection}{\numberline {D.1.2}Mathematical Definitions of Terrain Geometric Features}{49}{subsubsection.D.1.2}%
+\contentsline {subsubsection}{\numberline {D.1.3}Theoretical Basis of Semantic Traversability Classification}{50}{subsubsection.D.1.3}%
+\contentsline {subsubsection}{\numberline {D.1.4}Mathematical Criteria for Hard Blocking}{50}{subsubsection.D.1.4}%
+\contentsline {subsubsection}{\numberline {D.1.5}Theoretical Basis of Continuous Traversability Cost}{51}{subsubsection.D.1.5}%
+\contentsline {subsubsection}{\numberline {D.1.6}Rationale for Separating Hard Block and Soft Cost}{51}{subsubsection.D.1.6}%
+\contentsline {subsection}{\numberline {D.2}Methods, Setups and Software Implementation}{52}{subsection.D.2}%
+\contentsline {subsubsection}{\numberline {D.2.1}Implementation Pipeline}{52}{subsubsection.D.2.1}%
+\contentsline {subsubsection}{\numberline {D.2.2}Point-Cloud Preprocessing and Grid Representation}{52}{subsubsection.D.2.2}%
+\contentsline {subsubsection}{\numberline {D.2.3}Ground-Layer Analysis and Semantic Map Generation}{52}{subsubsection.D.2.3}%
+\contentsline {subsubsection}{\numberline {D.2.4}Cost-Map Generation}{53}{subsubsection.D.2.4}%
+\contentsline {subsubsection}{\numberline {D.2.5}Representative Map Outputs and Implementation Evaluation}{53}{subsubsection.D.2.5}%
+\contentsline {subsubsection}{\numberline {D.2.6}Quantitative Comparison and Design Analysis}{55}{subsubsection.D.2.6}%
+\contentsline {subsubsection}{\numberline {D.2.7}Discussion of Robustness and Limitations}{56}{subsubsection.D.2.7}%
+\contentsline {section}{\numberline {E}Repositories Related to This Work}{57}{appendix.E}%
+\contentsline {section}{\numberline {F}AI Assistance Statement}{58}{appendix.F}%
